@@ -9,8 +9,10 @@ To do that:
 ./prepare.sh
 ```
 
-You must let it run until all the OSM data has been imported. It will fill a
+You must let it run until all the OSM data has been imported. Do a `CTRL+C` before
+trying to run the servers. It will fill a
 PostgresQL DB in the `docker-osm/db` directory.
+
 
 ## Run the servers
 
@@ -28,6 +30,7 @@ It will start:
 * QGIS server: http://localhost:8083/?SERVICE=WMS&REQUEST=GetCapabilities
 
 You can open the `test.qgs` project with QGIS to browse them.
+
 
 ## Editing the layers provided
 

@@ -25,7 +25,7 @@
     </layer-tree-group>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="qgis">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="Roads20160707103450084" name="Roads">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="roads20160707140959495" name="roads">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -34,10 +34,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>6.95197301063476747</xmin>
-      <ymin>47.4766428297727785</ymin>
-      <xmax>7.04783144210172541</xmax>
-      <ymax>47.51845408330624565</ymax>
+      <xmin>8.616534349112424</xmin>
+      <ymin>47.76397470414200797</ymin>
+      <xmax>8.70187849112425837</xmax>
+      <ymax>47.80362263313609361</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -61,7 +61,7 @@
       <item>osm_roads20160707094606596</item>
       <item>roads20160707100920070</item>
       <item>osm_roads20160707101803392</item>
-      <item>Roads20160707103450084</item>
+      <item>roads20160707140959495</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -87,59 +87,14 @@
       </legendlayer>
     </legendgroup>
     <legendgroup open="true" checked="Qt::Checked" name="qgis">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Roads" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="roads" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Roads20160707103450084" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="roads20160707140959495" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
   <projectlayers>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-      <extent>
-        <xmin>5.81988000000000039</xmin>
-        <ymin>45.70029999999999859</ymin>
-        <xmax>10.62759999999999927</xmax>
-        <ymax>47.93379999999999797</ymax>
-      </extent>
-      <id>Roads20160707103450084</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=Roads&amp;styles=&amp;url=http://localhost:8083/</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>Roads</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <customproperties>
-        <property key="identify/format" value="Html"/>
-      </customproperties>
-      <provider>wms</provider>
-      <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
-      </noData>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <pipe>
-        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
-          <rasterTransparency/>
-        </rasterrenderer>
-        <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-        <rasterresampler maxOversampling="2"/>
-      </pipe>
-      <blendMode>0</blendMode>
-    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>5.93434762954712003</xmin>
@@ -355,6 +310,51 @@
       </srs>
       <customproperties>
         <property key="identify/format" value="Feature"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5.93435000000000024</xmin>
+        <ymin>45.81839999999999691</ymin>
+        <xmax>10.51319999999999943</xmax>
+        <ymax>47.81560000000000343</ymax>
+      </extent>
+      <id>roads20160707140959495</id>
+      <datasource>IgnoreGetFeatureInfoUrl=1&amp;IgnoreGetMapUrl=1&amp;contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads&amp;styles=&amp;url=http://localhost:8083//</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>roads</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Html"/>
       </customproperties>
       <provider>wms</provider>
       <noData>
