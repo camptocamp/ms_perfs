@@ -24,7 +24,7 @@ MAP
     STATUS ON
 
     FONTSET "fonts.conf"
-    #SYMBOLSET "symbol.sym"
+    SYMBOLSET "symbols.sym"
 
     CONFIG "MS_ERRORFILE" "stderr"
     DEBUG 5
@@ -84,5 +84,7 @@ MAP
         END
     END
 
-    INCLUDE "include/roads.map"
+    INCLUDE "include/point.map"
+    INCLUDE "include/line.map"
+    INCLUDE "include/polygon.map"
 END
