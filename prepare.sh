@@ -3,7 +3,9 @@ set -e
 
 if [[ ! -d docker-osm ]]
 then
-    git clone git@github.com:Gustry/docker-osm.git
+    git clone git@github.com:pvalsecc/docker-osm.git
+else
+    (cd docker-osm; git pull --rebase) || true
 fi
 
 if [[ ! -d OSM-Shapefile-QGIS-stylesheets ]]
