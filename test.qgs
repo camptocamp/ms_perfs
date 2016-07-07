@@ -11,11 +11,32 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="mapserver">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="mapserver">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="roads20160707100920070" name="roads">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="simple">
         <customproperties/>
-      </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="roads_simple20160707162114144" name="roads_simple">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="amenities_simple20160707162112048" name="amenities_simple">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="building_simple20160707162116553" name="building_simple">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="complex">
+        <customproperties/>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="amenities_class20160707162310136" name="amenities_class">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="roads_dashed20160707162301768" name="roads_dashed">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="building_hatched20160707162257760" name="building_hatched">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
     </layer-tree-group>
     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="DB">
       <customproperties/>
@@ -23,9 +44,9 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="qgis">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="qgis">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="roads20160707140959495" name="roads">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="roads20160707140959495" name="roads">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -34,10 +55,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>8.616534349112424</xmin>
-      <ymin>47.76397470414200797</ymin>
-      <xmax>8.70187849112425837</xmax>
-      <ymax>47.80362263313609361</ymax>
+      <xmin>8.5329100710811705</xmin>
+      <ymin>47.36576247020305175</ymin>
+      <xmax>8.54945373310047607</xmax>
+      <ymax>47.37344808191092227</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -59,9 +80,14 @@
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>osm_roads20160707094606596</item>
-      <item>roads20160707100920070</item>
       <item>osm_roads20160707101803392</item>
       <item>roads20160707140959495</item>
+      <item>amenities_simple20160707162112048</item>
+      <item>roads_simple20160707162114144</item>
+      <item>building_simple20160707162116553</item>
+      <item>building_hatched20160707162257760</item>
+      <item>roads_dashed20160707162301768</item>
+      <item>amenities_class20160707162310136</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -72,12 +98,41 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="mapserver">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="roads" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="roads20160707100920070" visible="0"/>
-        </filegroup>
-      </legendlayer>
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="mapserver">
+      <legendgroup open="false" checked="Qt::Unchecked" name="simple">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="roads_simple" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="roads_simple20160707162114144" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="amenities_simple" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="amenities_simple20160707162112048" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="building_simple" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="building_simple20160707162116553" visible="0"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
+      <legendgroup open="true" checked="Qt::Checked" name="complex">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="amenities_class" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="amenities_class20160707162310136" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="roads_dashed" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="roads_dashed20160707162301768" visible="1"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="building_hatched" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="building_hatched20160707162257760" visible="1"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
     </legendgroup>
     <legendgroup open="true" checked="Qt::Unchecked" name="DB">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="roads" showFeatureCount="0">
@@ -86,15 +141,195 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Checked" name="qgis">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="roads" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="qgis">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="roads" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="roads20160707140959495" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="roads20160707140959495" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
   <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5</xmin>
+        <ymin>45</ymin>
+        <xmax>11</xmax>
+        <ymax>48</ymax>
+      </extent>
+      <id>amenities_class20160707162310136</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>amenities_class</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Feature"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5</xmin>
+        <ymin>45</ymin>
+        <xmax>11</xmax>
+        <ymax>48</ymax>
+      </extent>
+      <id>amenities_simple20160707162112048</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>amenities_simple</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Feature"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5</xmin>
+        <ymin>45</ymin>
+        <xmax>11</xmax>
+        <ymax>48</ymax>
+      </extent>
+      <id>building_hatched20160707162257760</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_hatched&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>building_hatched</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Feature"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5</xmin>
+        <ymin>45</ymin>
+        <xmax>11</xmax>
+        <ymax>48</ymax>
+      </extent>
+      <id>building_simple20160707162116553</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>building_simple</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Feature"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>5.93434762954712003</xmin>
@@ -285,17 +520,62 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
+        <xmin>5.93435000000000024</xmin>
+        <ymin>45.81839999999999691</ymin>
+        <xmax>10.51319999999999943</xmax>
+        <ymax>47.81560000000000343</ymax>
+      </extent>
+      <id>roads20160707140959495</id>
+      <datasource>IgnoreGetFeatureInfoUrl=1&amp;IgnoreGetMapUrl=1&amp;contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads&amp;styles=&amp;url=http://localhost:8083//</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>roads</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Html"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
         <xmin>5</xmin>
         <ymin>45</ymin>
         <xmax>11</xmax>
         <ymax>48</ymax>
       </extent>
-      <id>roads20160707100920070</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads&amp;styles=&amp;url=http://localhost:8081/</datasource>
+      <id>roads_dashed20160707162301768</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:8081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>roads</layername>
+      <layername>roads_dashed</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -330,17 +610,17 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
-        <xmin>5.93435000000000024</xmin>
-        <ymin>45.81839999999999691</ymin>
-        <xmax>10.51319999999999943</xmax>
-        <ymax>47.81560000000000343</ymax>
+        <xmin>5</xmin>
+        <ymin>45</ymin>
+        <xmax>11</xmax>
+        <ymax>48</ymax>
       </extent>
-      <id>roads20160707140959495</id>
-      <datasource>IgnoreGetFeatureInfoUrl=1&amp;IgnoreGetMapUrl=1&amp;contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads&amp;styles=&amp;url=http://localhost:8083//</datasource>
+      <id>roads_simple20160707162114144</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:8081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>roads</layername>
+      <layername>roads_simple</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -354,7 +634,7 @@
         </spatialrefsys>
       </srs>
       <customproperties>
-        <property key="identify/format" value="Html"/>
+        <property key="identify/format" value="Feature"/>
       </customproperties>
       <provider>wms</provider>
       <noData>
