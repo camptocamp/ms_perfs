@@ -1,5 +1,4 @@
-/OSM-Shapefile-QGIS-stylesheets
-/QGIS-resources
 /docker-osm
 /geoserver/logs
+/qgis/project_ext.qgs
 *~

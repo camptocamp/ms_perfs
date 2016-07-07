@@ -27,3 +27,12 @@ geoserver:
     - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
   links:
     - db
+
+qgis:
+  image: pvalsecc/qgis-server:latest
+  ports:
+    - 8083:80
+  volumes:
+    - ./qgis:/project
+  links:
+    - db
