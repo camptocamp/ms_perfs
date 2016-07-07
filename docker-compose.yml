@@ -3,7 +3,7 @@ db:
   image: camptocamp/postgresql:pg9.5-latest
   environment:
     POSTGRES_USER: docker
-    POSTGRES_PASS: docker
+    POSTGRES_PASSWORD: docker
     POSTGRES_DB: gis
   volumes:
     - ./docker-osm/db:/var/lib/postgresql/data
