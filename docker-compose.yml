@@ -1,0 +1,29 @@
+db:
+  # About the postgresql version, it should match in the dockerfile of docker-imposm3
+  image: camptocamp/postgresql:pg9.5-latest
+  environment:
+    POSTGRES_USER: docker
+    POSTGRES_PASS: docker
+    POSTGRES_DB: gis
+  volumes:
+    - ./docker-osm/db:/var/lib/postgresql/data
+  ports:
+    - 15432:5432
+
+mapserver:
+  image: camptocamp/mapserver:latest
+  ports:
+    - 8081:80
+  volumes:
+    - ./mapserver:/etc/mapserver
+  links:
+    - db
+
+geoserver:
+  image: camptocamp/geoserver:2.9
+  ports:
+    - 8082:8080
+  volumes:
+    - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
+  links:
+    - db

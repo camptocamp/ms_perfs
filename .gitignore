@@ -1,3 +1,5 @@
 /OSM-Shapefile-QGIS-stylesheets
 /QGIS-resources
 /docker-osm
+/geoserver/logs
+*~
