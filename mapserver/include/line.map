@@ -1,0 +1,71 @@
+LAYER
+    NAME 'roads_simple'
+    TYPE LINE
+    TEMPLATE fooOnlyForWMSGetFeatureInfo # For GetFeatureInfo
+    EXTENT 5 45 11 48
+    CONNECTIONTYPE postgis
+    PROCESSING "CLOSE_CONNECTION=DEFER" # For performance
+    CONNECTION "user=docker password=docker dbname=gis host=db"
+    DATA "geometry FROM (SELECT * FROM osm_roads) AS foo USING UNIQUE osm_id USING srid=4326"
+    METADATA
+        "wms_title" "roads_simple" # For WMS
+        "wms_srs" "EPSG:4326" # For WMS
+
+        "wfs_enable_request" "*" # Enable WFS for this layer
+        "gml_include_items" "all" # For GetFeatureInfo and WFS GetFeature (QueryBuilder)
+        "ows_geom_type" "linestring" # For returning geometries in GetFeatureInfo
+        "ows_geometries" "MultiLinestring" # For returning geometries in GetFeatureInfo
+        "wfs_featureid" "id"
+    END
+    STATUS ON
+    PROJECTION
+        "init=epsg:4326"
+    END
+    COMPOSITE
+        OPACITY 50
+    END
+    CLASS
+        NAME "roads"
+        STYLE
+            COLOR 100 155 100
+            WIDTH 2
+            #OUTLINECOLOR 128 128 128
+        END
+    END
+END
+LAYER
+    NAME 'roads_dashed'
+    TYPE LINE
+    TEMPLATE fooOnlyForWMSGetFeatureInfo # For GetFeatureInfo
+    EXTENT 5 45 11 48
+    CONNECTIONTYPE postgis
+    PROCESSING "CLOSE_CONNECTION=DEFER" # For performance
+    CONNECTION "user=docker password=docker dbname=gis host=db"
+    DATA "geometry FROM (SELECT * FROM osm_roads) AS foo USING UNIQUE osm_id USING srid=4326"
+    METADATA
+        "wms_title" "roads_dashed" # For WMS
+        "wms_srs" "EPSG:4326" # For WMS
+
+        "wfs_enable_request" "*" # Enable WFS for this layer
+        "gml_include_items" "all" # For GetFeatureInfo and WFS GetFeature (QueryBuilder)
+        "ows_geom_type" "linestring" # For returning geometries in GetFeatureInfo
+        "ows_geometries" "MultiLinestring" # For returning geometries in GetFeatureInfo
+        "wfs_featureid" "id"
+    END
+    STATUS ON
+    PROJECTION
+        "init=epsg:4326"
+    END
+    CLASS
+        NAME "roads"
+        STYLE
+            COLOR 100 155 100
+            WIDTH 2
+            PATTERN 5 5 END
+            #OUTLINECOLOR 128 128 128
+        END
+    END
+END
+
+
+#TODO: roads with class

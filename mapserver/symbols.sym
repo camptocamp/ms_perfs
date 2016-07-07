@@ -1,0 +1,32 @@
+SYMBOLSET
+  SYMBOL
+     NAME "circle"
+     TYPE ellipse
+     POINTS
+       1 1
+     END # end of POINTS
+     FILLED true
+  END
+  SYMBOL
+    NAME "police"
+    TYPE PIXMAP
+    IMAGE "symbols/police.png"
+    ANCHORPOINT 0.5 1
+  END
+  SYMBOL
+    NAME "library"
+    TYPE PIXMAP
+    IMAGE "symbols/book.png"
+    ANCHORPOINT 0.5 1
+  END
+  SYMBOL
+    NAME "university"
+    TYPE PIXMAP
+    IMAGE "symbols/university.png"
+    ANCHORPOINT 0.5 1
+  END
+  SYMBOL
+    NAME "hatchsymbol"
+    TYPE hatch
+  END
+END

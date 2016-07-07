@@ -1,0 +1,93 @@
+LAYER
+    NAME 'amenities_simple'
+    TYPE POINT
+    TEMPLATE fooOnlyForWMSGetFeatureInfo # For GetFeatureInfo
+    EXTENT 5 45 11 48
+    CONNECTIONTYPE postgis
+    PROCESSING "CLOSE_CONNECTION=DEFER" # For performance
+    CONNECTION "user=docker password=docker dbname=gis host=db"
+    DATA "geometry FROM (SELECT * FROM osm_amenities) AS foo USING UNIQUE osm_id USING srid=4326"
+    METADATA
+        "wms_title" "amenities_simple" # For WMS
+        "wms_srs" "EPSG:4326" # For WMS
+
+        "wfs_enable_request" "*" # Enable WFS for this layer
+        "gml_include_items" "all" # For GetFeatureInfo and WFS GetFeature (QueryBuilder)
+        "ows_geom_type" "point" # For returning geometries in GetFeatureInfo
+        "ows_geometries" "Point" # For returning geometries in GetFeatureInfo
+        "wfs_featureid" "id"
+    END
+    STATUS ON
+    PROJECTION
+        "init=epsg:4326"
+    END
+    CLASS
+        NAME "amenities"
+        STYLE
+            SYMBOL "circle"
+            COLOR 100 155 100
+            WIDTH 2
+            SIZE 20
+            OUTLINECOLOR 128 128 128
+        END
+    END
+END
+LAYER
+    NAME 'amenities_class'
+    TYPE POINT
+    TEMPLATE fooOnlyForWMSGetFeatureInfo # For GetFeatureInfo
+    EXTENT 5 45 11 48
+    CONNECTIONTYPE postgis
+    PROCESSING "CLOSE_CONNECTION=DEFER" # For performance
+    CONNECTION "user=docker password=docker dbname=gis host=db"
+    DATA "geometry FROM (SELECT * FROM osm_amenities) AS foo USING UNIQUE osm_id USING srid=4326"
+    METADATA
+        "wms_title" "amenities_simple" # For WMS
+        "wms_srs" "EPSG:4326" # For WMS
+
+        "wfs_enable_request" "*" # Enable WFS for this layer
+        "gml_include_items" "all" # For GetFeatureInfo and WFS GetFeature (QueryBuilder)
+        "ows_geom_type" "point" # For returning geometries in GetFeatureInfo
+        "ows_geometries" "Point" # For returning geometries in GetFeatureInfo
+        "wfs_featureid" "id"
+    END
+    STATUS ON
+    PROJECTION
+        "init=epsg:4326"
+    END
+    CLASSITEM "type"
+    CLASS
+        NAME "school"
+        EXPRESSION {school,university}
+        STYLE
+            SYMBOL "university"
+            COLOR 100 155 100
+            WIDTH 2
+            SIZE 30
+            OUTLINECOLOR 128 128 128
+        END
+    END
+    CLASS
+        NAME "library"
+        EXPRESSION "library"
+        STYLE
+            SYMBOL "library"
+            COLOR 100 155 100
+            WIDTH 2
+            SIZE 30
+            OUTLINECOLOR 128 128 128
+        END
+    END
+    CLASS
+        NAME "police"
+        EXPRESSION "police"
+        STYLE
+            SYMBOL "police"
+            COLOR 100 155 100
+            WIDTH 2
+            SIZE 30
+            OUTLINECOLOR 128 128 128
+        END
+    END
+END
+

@@ -1,0 +1,82 @@
+LAYER
+    NAME 'building_simple'
+    TYPE POLYGON
+    TEMPLATE fooOnlyForWMSGetFeatureInfo # For GetFeatureInfo
+    EXTENT 5 45 11 48
+    CONNECTIONTYPE postgis
+    PROCESSING "CLOSE_CONNECTION=DEFER" # For performance
+    CONNECTION "user=docker password=docker dbname=gis host=db"
+    DATA "geometry FROM (SELECT * FROM osm_buildings) AS foo USING UNIQUE osm_id USING srid=4326"
+    METADATA
+        "wms_title" "building_simple" # For WMS
+        "wms_srs" "EPSG:4326" # For WMS
+
+        "wfs_enable_request" "*" # Enable WFS for this layer
+        "gml_include_items" "all" # For GetFeatureInfo and WFS GetFeature (QueryBuilder)
+        "ows_geom_type" "polygon" # For returning geometries in GetFeatureInfo
+        "ows_geometries" "MultiPolygon" # For returning geometries in GetFeatureInfo
+        "wfs_featureid" "id"
+    END
+    STATUS ON
+    PROJECTION
+        "init=epsg:4326"
+    END
+    CLASS
+        NAME "building"
+        STYLE
+            COLOR 200 200 200
+            WIDTH 1
+            OUTLINECOLOR 128 128 128
+        END
+    END
+END
+
+LAYER
+    NAME 'building_hatched'
+    TYPE POLYGON
+    TEMPLATE fooOnlyForWMSGetFeatureInfo # For GetFeatureInfo
+    EXTENT 5 45 11 48
+    CONNECTIONTYPE postgis
+    PROCESSING "CLOSE_CONNECTION=DEFER" # For performance
+    CONNECTION "user=docker password=docker dbname=gis host=db"
+    DATA "geometry FROM (SELECT * FROM osm_buildings) AS foo USING UNIQUE osm_id USING srid=4326"
+    METADATA
+        "wms_title" "building_hatched" # For WMS
+        "wms_srs" "EPSG:4326" # For WMS
+
+        "wfs_enable_request" "*" # Enable WFS for this layer
+        "gml_include_items" "all" # For GetFeatureInfo and WFS GetFeature (QueryBuilder)
+        "ows_geom_type" "polygon" # For returning geometries in GetFeatureInfo
+        "ows_geometries" "MultiPolygon" # For returning geometries in GetFeatureInfo
+        "wfs_featureid" "id"
+    END
+    STATUS ON
+    PROJECTION
+        "init=epsg:4326"
+    END
+    CLASSITEM "type"
+    CLASS
+        NAME "building yes"
+        EXPRESSION "yes"
+        STYLE
+            SYMBOL "hatchsymbol"
+            COLOR 0 0 0
+            SIZE 10
+            WIDTH 2
+            ANGLE 45
+            PATTERN 20 10 20 10 END
+        END
+        STYLE
+            OUTLINECOLOR 50 50 50
+        END
+    END
+    CLASS
+      NAME "building"
+      STYLE
+            COLOR 200 200 200
+            WIDTH 1
+            OUTLINECOLOR 128 128 128
+      END
+    END
+END
+
