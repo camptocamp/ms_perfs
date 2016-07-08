@@ -27,8 +27,17 @@
               <se:ExternalGraphic>
                 <se:OnlineResource
                     xlink:type="simple"
-                    xlink:href="symbols/university.png" />
-                <se:Format>image/png</se:Format>
+                    xlink:href="symbols/education_university.svg" />
+                <se:Format>image/svg+xml</se:Format>
+                <se:ColorReplacement>
+                  <se:Recode fallbackValue="">
+                    <se:LookupValue>#000000</se:LookupValue>
+                    <se:MapItem>
+                      <se:Data>0</se:Data>
+                      <se:Value>#649B64</se:Value>
+                    </se:MapItem>
+                  </se:Recode>
+                </se:ColorReplacement>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
               <se:AnchorPoint>
@@ -54,8 +63,8 @@
               <se:ExternalGraphic>
                 <se:OnlineResource
                     xlink:type="simple"
-                    xlink:href="symbols/book.png" />
-                <se:Format>image/png</se:Format>
+                    xlink:href="symbols/amenity_library.svg" />
+                <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
               <se:AnchorPoint>
@@ -81,8 +90,8 @@
               <se:ExternalGraphic>
                 <se:OnlineResource
                     xlink:type="simple"
-                    xlink:href="symbols/police.png" />
-                <se:Format>image/png</se:Format>
+                    xlink:href="symbols/amenity_police.svg" />
+                <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
               <se:AnchorPoint>
