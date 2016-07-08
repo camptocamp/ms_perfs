@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="osm_buildings20160708091052980" name="building_hatched">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="osm_buildings20160708091052980" name="building_hatched">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="osm_buildings20160708090725136" name="building_simple">
@@ -61,9 +61,9 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="building_hatched" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="building_hatched" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_buildings20160708091052980" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="osm_buildings20160708091052980" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="building_simple" showFeatureCount="0">
@@ -1120,7 +1120,11 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{0f865c22-9459-4ae7-9586-03fad619ed73}">
+          <rule filter=" &quot;type&quot;  = 'yes'" key="{1867eecc-5da5-4c9e-b7cd-a633b76354a9}" symbol="0" label="building yes"/>
+          <rule description="building" filter=" &quot;type&quot; != 'yes'" key="{1f3f3f2c-ebaa-4a07-af68-21aac503bae1}" symbol="1" label="building"/>
+        </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
@@ -1171,9 +1175,22 @@ def my_form_open(dialog, layer, feature):
               </symbol>
             </layer>
           </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="200,200,200,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,128,128,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="1"/>
+              <prop k="outline_width_unit" v="Pixel"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
         </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
