@@ -21,9 +21,9 @@ LAYER
     PROJECTION
         "init=epsg:4326"
     END
-    COMPOSITE
-        OPACITY 50
-    END
+#    COMPOSITE
+#        OPACITY 50
+#    END
     CLASS
         NAME "roads"
         STYLE

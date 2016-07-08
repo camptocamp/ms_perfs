@@ -9,21 +9,21 @@ SYMBOLSET
   END
   SYMBOL
     NAME "police"
-    TYPE PIXMAP
-    IMAGE "symbols/police.png"
-    ANCHORPOINT 0.5 1
+    TYPE SVG 
+    IMAGE "symbols/amenity_police.svg"
+    #ANCHORPOINT 0.5 1
   END
   SYMBOL
     NAME "library"
-    TYPE PIXMAP
-    IMAGE "symbols/book.png"
-    ANCHORPOINT 0.5 1
+    TYPE SVG
+    IMAGE "symbols/amenity_library.svg"
+    #ANCHORPOINT 0.5 1
   END
   SYMBOL
     NAME "university"
-    TYPE PIXMAP
-    IMAGE "symbols/university.png"
-    ANCHORPOINT 0.5 1
+    TYPE SVG
+    IMAGE "symbols/education_university.svg"
+    #ANCHORPOINT 0.5 1
   END
   SYMBOL
     NAME "hatchsymbol"
