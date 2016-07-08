@@ -1,0 +1,15 @@
+<layer>
+  <name>amenities_class</name>
+  <id>LayerInfoImpl-502791bd:155c55a9905:-7fd3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-502791bd:155c55a9905:-7fd2</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-502791bd:155c55a9905:-7fd4</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

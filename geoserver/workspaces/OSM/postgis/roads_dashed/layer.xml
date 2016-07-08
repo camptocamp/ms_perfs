@@ -1,0 +1,15 @@
+<layer>
+  <name>roads_dashed</name>
+  <id>LayerInfoImpl-502791bd:155c55a9905:-7fee</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-502791bd:155c55a9905:-7ff2</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-502791bd:155c55a9905:-7fef</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
