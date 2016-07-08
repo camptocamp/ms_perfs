@@ -1,0 +1,15 @@
+<layer>
+  <name>building_hatched</name>
+  <id>LayerInfoImpl--30c3a476:155ca2f48e4:-7fc7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--30c3a476:155ca2f48e4:-7fcd</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--30c3a476:155ca2f48e4:-7fc8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

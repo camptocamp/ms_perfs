@@ -1,0 +1,15 @@
+<layer>
+  <name>building_simple</name>
+  <id>LayerInfoImpl--30c3a476:155ca2f48e4:-7fd6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--30c3a476:155ca2f48e4:-7fd5</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--30c3a476:155ca2f48e4:-7fd7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
