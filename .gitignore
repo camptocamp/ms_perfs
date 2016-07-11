@@ -1,4 +1,5 @@
 /docker-osm
 /geoserver/logs
+/perfs/results
 /qgis/project_ext.qgs
 *~

@@ -1,0 +1,8 @@
+gatling:
+  build: ./perfs
+  links:
+    - mapserver
+    - geoserver
+    - qgis
+  volumes:
+    - ./perfs/results:/opt/gatling/results

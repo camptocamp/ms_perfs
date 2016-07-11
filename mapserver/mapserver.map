@@ -27,7 +27,7 @@ MAP
     SYMBOLSET "symbols.sym"
 
     CONFIG "MS_ERRORFILE" "stderr"
-    DEBUG 5
+    DEBUG 0
 
     OUTPUTFORMAT
         NAME jpeg
