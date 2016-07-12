@@ -18,7 +18,8 @@ do
     sleep 1
 done
 
-export base_urls="http://mapserver/|MapServer,http://qgis/|QGIS,http://geoserver:8080/ows|GeoServer"
+export
+base_urls="http://mapserver/|MapServer,http://qgis/|QGIS,http://geoserver:8080/OSM/ows|GeoServer"
 
 rm -r $GATLING_HOME/results/*
 
