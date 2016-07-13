@@ -32,6 +32,13 @@ It will start:
 You can open the `test.qgs` project with QGIS to browse them.
 
 
+## Run the perf tests
+
+```bash
+./measure.sh
+```
+
+
 ## Editing the layers provided
 
 ### MapServer
@@ -39,6 +46,7 @@ You can open the `test.qgs` project with QGIS to browse them.
 The mapfile is there: `mapserver/mapserver.map`
 
 Just edit it or one of the included files.
+
 
 ### GeoServer
 
