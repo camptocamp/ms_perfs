@@ -30,6 +30,8 @@ geoserver:
 
 qgis:
   image: pvalsecc/qgis-server:latest
+  environment:
+    QGIS_SERVER_LOG_LEVEL: 3
   ports:
     - 8083:80
   volumes:
