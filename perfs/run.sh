@@ -18,14 +18,14 @@ do
     sleep 1
 done
 
-base_urls="http://mapserver/|MapServer,http://qgis/|QGIS,http://geoserver:8080/OSM/ows|GeoServer"
+export base_urls="http://mapserver/|MapServer,http://qgis/|QGIS,http://geoserver:8080/OSM/ows|GeoServer"
 
 rm -r $GATLING_HOME/results/*
 
-for nb_users in 1 5
+for nb_users in 1 2 5 10 20 40
 do
     export nb_users=$nb_users
-    gatling.sh -sf $GATLING_HOME/user-files/simulations -s com.camptocamp.Test -nr
+    gatling.sh -sf $GATLING_HOME/user-files/simulations -s com.camptocamp.Test
 done
 
 cd $GATLING_HOME/results/

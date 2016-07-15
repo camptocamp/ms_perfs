@@ -6,4 +6,8 @@ COMPOSE="docker-compose -f docker-compose.yml -f docker-compose-perfs.yml"
 ${COMPOSE} stop
 ${COMPOSE} rm -f --all
 ${COMPOSE} build
-${COMPOSE} up
+${COMPOSE} up --abort-on-container-exit || true
+
+./summary.py
+
+echo "Summary file you can open with Excel or LibreOffice Calc: summary.py"
