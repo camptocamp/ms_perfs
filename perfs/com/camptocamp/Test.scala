@@ -30,7 +30,7 @@ class Test extends Simulation {
             println("Starting level " + session("level").as[String])
             session
           })
-            .during(2 minutes) {
+            .during(PerfConfig.time seconds, "tries", false) {
               exec(session => PerfConfig.addRandomTileInfo(session)).exec(fetchTile)
             }
             .exec(session => {

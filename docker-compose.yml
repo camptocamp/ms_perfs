@@ -1,10 +1,10 @@
 db:
-  # About the postgresql version, it should match in the dockerfile of docker-imposm3
   image: camptocamp/postgresql:pg9.5-latest
   environment:
     POSTGRES_USER: docker
     POSTGRES_PASSWORD: docker
     POSTGRES_DB: gis
+    PG_SYSTEM_SHARED_BUFFERS: 256MB
   volumes:
     - ./docker-osm/db:/var/lib/postgresql/data
   ports:

@@ -32,6 +32,7 @@ object PerfConfig {
   val baseUrls: Seq[String] = baseUrlMap.keys.toSeq
   val layers = getConf("layers", "amenities_class,roads_dashed,building_hatched,amenities_simple,roads_simple,building_simple").split(",")
   val nbUsers: Int = getConf("nb_users", 1)
+  val time: Int = getConf("time", 30)
 
   val maxWidth = maxX - minX
   val maxHeight = maxY - minY

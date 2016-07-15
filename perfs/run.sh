@@ -20,10 +20,17 @@ done
 
 export base_urls="http://geoserver:8080/OSM/ows|GeoServer,http://mapserver/|MapServer,http://qgis/|QGIS"
 
+echo "warmup round (results are trashed)"
+export nb_users=1
+export time=30
+gatling.sh -sf $GATLING_HOME/user-files/simulations -s com.camptocamp.Test
+
 rm -r $GATLING_HOME/results/*
 
+export time=120  # time to keep measing for a given server and a given zoom level
 for nb_users in 1 2 5 10 20 40
 do
+    echo "Measuring with $nb_users users in //"
     export nb_users=$nb_users
     gatling.sh -sf $GATLING_HOME/user-files/simulations -s com.camptocamp.Test
 done
