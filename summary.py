@@ -23,29 +23,36 @@ def flatten_dict(dico, row, callback):
             callback(sub_row + [value[0], value[1]/value[0]])
 
 
-def read_file(path, summary):
+def read_file(path, summary, errors):
     with open(path, 'r') as file:
         reader = csv.reader(file, delimiter='\t')
         for row in reader:
             if row[0] == 'REQUEST':
                 _, _, _, group, level, start, stop, status, _ = row
+                group = group.split(',') + [level]
                 if status == "OK":
                     time = int(stop) - int(start)
-                    group = group.split(',') + [level]
                     merge_dict(summary, group, time)
                 else:
-                    print("Error for " + "/".join(group))
+                    merge_dict(errors, group, 1)
 
 
 def main():
     summary = {}
+    errors = {}
     for dirname in os.listdir(BASE_PATH):
         if FILE_RE.match(dirname):
-            read_file(os.path.join(BASE_PATH, dirname, 'simulation.log'), summary)
+            read_file(os.path.join(BASE_PATH, dirname, 'simulation.log'), summary, errors)
 
     with open("summary.csv", "w") as dest:
         writer = csv.writer(dest, delimiter='\t')
         writer.writerow(['nb_users', 'server', 'layer', 'level', 'nb', 'avg_ms'])
         flatten_dict(summary, [], lambda cols: writer.writerow(cols))
+        writer.writerow([])
+        writer.writerow([])
+        writer.writerow(['Errors'])
+        writer.writerow(['nb_users', 'server', 'layer', 'level', 'nb', 'one'])
+        flatten_dict(errors, [], lambda cols: writer.writerow(cols))
+
 
 main()
