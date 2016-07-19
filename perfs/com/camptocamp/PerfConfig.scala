@@ -17,13 +17,13 @@ object PerfConfig {
     default
   }
 
-  val stepFactor = 1.2
+  val stepFactor = 2
   val nbSteps = 7
   val ratio = 4.0 / 3.0
-  val minX = 7
-  val minY = 46
-  val maxX = 9.5
-  val maxY = 47.5
+  val minX = 7.2
+  val minY = 46.6
+  val maxX = 8.2
+  val maxY = 47
   val defaultBaseUrls = "http://localhost:8081/|MapServer,http://localhost:8083/|QGIS,http://localhost:8082/OSM/ows|GeoServer"
   val baseUrlMap: Map[String, String] = getConf("base_urls", defaultBaseUrls).split(",").map(a => {
     val s = a.split("\\|")

@@ -1,0 +1,12 @@
+db:
+  image: camptocamp/postgresql:pg9.5-latest
+  environment:
+    POSTGRES_USER: docker
+    POSTGRES_PASSWORD: docker
+    POSTGRES_DB: gis
+    PG_SYSTEM_SHARED_BUFFERS: 256MB
+    PG_SYSTEM_MAX_CONNECTIONS: 200
+  volumes:
+    - ./docker-osm/db:/var/lib/postgresql/data
+  ports:
+    - 15432:5432
