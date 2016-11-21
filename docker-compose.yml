@@ -30,7 +30,7 @@ geoserver:
     - db
 
 qgis:
-  image: pvalsecc/qgis-server:latest
+  image: camptocamp/qgis-server:3
   environment:
     QGIS_SERVER_LOG_LEVEL: 3
   ports:
