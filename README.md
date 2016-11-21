@@ -68,3 +68,9 @@ This would do it, for example:
 ```bash
 ./externalize_qgis_project.sh; qgis qgis/project_ext.qgs; ./internalize_qgis_project.sh
 ```
+
+You can also run QGIS from the same docker image as the QGIS server:
+
+```
+docker run --rm --add-host db:172.17.0.2 -ti -e DISPLAY=unix${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${HOME}:${HOME} camptocamp/qgis-server:3 /usr/local/bin/start-client.sh
+```
