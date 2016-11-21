@@ -1,29 +1,32 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.15.0-Master">
+<qgis projectname="" version="2.99.0-Master">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+  <layer-tree-group name="" expanded="1" checked="Qt::PartiallyChecked">
     <customproperties/>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="osm_amenities20160708081558683" name="amenities_class">
+    <layer-tree-layer name="amenities_class" expanded="0" checked="Qt::Checked" id="osm_amenities20160708081558683">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="osm_amenities20160708081323691" name="amenities_simple">
+    <layer-tree-layer name="amenities_simple" expanded="1" checked="Qt::Unchecked" id="osm_amenities20160708081323691">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="osm_roads20160707115518827" name="roads_simple">
+    <layer-tree-layer name="roads_simple" expanded="1" checked="Qt::Checked" id="osm_roads20160707115518827">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="osm_roads20160708073426641" name="roads_dashed">
+    <layer-tree-layer name="roads_dashed" expanded="1" checked="Qt::Unchecked" id="osm_roads20160708073426641">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="osm_buildings20160708091052980" name="building_hatched">
+    <layer-tree-layer name="building_hatched" expanded="0" checked="Qt::Checked" id="osm_buildings20160708091052980">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="osm_buildings20160708090725136" name="building_simple">
+    <layer-tree-layer name="building_simple" expanded="1" checked="Qt::Unchecked" id="osm_buildings20160708090725136">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
+  <snapping-settings enabled="1" intersection-snapping="0" tolerance="0" type="1" mode="1" unit="2">
+    <individual-layer-settings/>
+  </snapping-settings>
   <relations/>
   <mapcanvas>
     <units>degrees</units>
@@ -61,39 +64,39 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="amenities_class" showFeatureCount="0">
+    <legendlayer name="amenities_class" open="false" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_amenities20160708081558683" visible="1"/>
+        <legendlayerfile layerid="osm_amenities20160708081558683" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="amenities_simple" showFeatureCount="0">
+    <legendlayer name="amenities_simple" open="true" checked="Qt::Unchecked" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_amenities20160708081323691" visible="0"/>
+        <legendlayerfile layerid="osm_amenities20160708081323691" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="roads_simple" showFeatureCount="0">
+    <legendlayer name="roads_simple" open="true" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_roads20160707115518827" visible="1"/>
+        <legendlayerfile layerid="osm_roads20160707115518827" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="roads_dashed" showFeatureCount="0">
+    <legendlayer name="roads_dashed" open="true" checked="Qt::Unchecked" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_roads20160708073426641" visible="0"/>
+        <legendlayerfile layerid="osm_roads20160708073426641" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="building_hatched" showFeatureCount="0">
+    <legendlayer name="building_hatched" open="false" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_buildings20160708091052980" visible="1"/>
+        <legendlayerfile layerid="osm_buildings20160708091052980" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="building_simple" showFeatureCount="0">
+    <legendlayer name="building_simple" open="true" checked="Qt::Unchecked" drawingOrder="-1" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="osm_buildings20160708090725136" visible="0"/>
+        <legendlayerfile layerid="osm_buildings20160708090725136" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" readOnly="0" maximumScale="1e+08" simplifyDrawingHints="0" geometry="Point" simplifyLocal="1" simplifyDrawingTol="1" type="vector" minimumScale="100000" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>5.94874238967896041</xmin>
         <ymin>45.82137680053710227</ymin>
@@ -121,54 +124,72 @@
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="name" expression=""/>
+        <default field="type" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="osm_id" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="type" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="osm_id" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+      </constraintExpressions>
+      <dataDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="osm_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="osm_id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="name" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="type" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="100,155,100,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="Pixel"/>
-              <prop k="outline_color" v="128,128,128,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="2"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="20"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="Pixel"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol name="0" clip_to_extent="1" alpha="1" type="marker">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop v="0" k="angle"/>
+              <prop v="100,155,100,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="Pixel" k="offset_unit"/>
+              <prop v="128,128,128,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="2" k="outline_width"/>
+              <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="20" k="size"/>
+              <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="Pixel" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
-        <sizescale scalemethod="diameter"/>
+        <sizescale/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -315,74 +336,58 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Oxygen-Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
-          <fontProperties description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer sizeLegend="0" diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory backgroundColor="#ffffff" minScaleDenominator="100000" maxScaleDenominator="1e+08" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" scaleDependency="Area" backgroundAlpha="255" lineSizeScale="0,0,0,0,0,0" sizeType="MM" width="15" barWidth="5" penColor="#000000" angleOffset="1440" enabled="0" penWidth="0" lineSizeType="MM" diagramOrientation="Up" penAlpha="255" transparency="0" height="15" sizeScale="0,0,0,0,0,0">
+          <fontProperties style="" description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0"/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
+        <symbol name="sizeSymbol" clip_to_extent="1" alpha="1" type="marker">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop v="0" k="angle"/>
+            <prop v="255,0,0,255" k="color"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="circle" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="solid" k="outline_style"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="2" k="size"/>
+            <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MM" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
           </layer>
         </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <DiagramLayerSettings obstacle="0" showColumn="-1" dist="0" yPosColumn="-1" linePlacementFlags="10" priority="0" zIndex="0" xPosColumn="-1" placement="0" showAll="1"/>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias name="" field="id" index="0"/>
+        <alias name="" field="osm_id" index="1"/>
+        <alias name="" field="name" index="2"/>
+        <alias name="" field="type" index="3"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="osm_id"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="osm_id" hidden="0" type="field" width="-1"/>
+          <column name="name" hidden="0" type="field" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -407,8 +412,11 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" readOnly="0" maximumScale="1e+08" simplifyDrawingHints="0" geometry="Point" simplifyLocal="1" simplifyDrawingTol="1" type="vector" minimumScale="100000" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>5.94874238967896041</xmin>
         <ymin>45.82137680053710227</ymin>
@@ -436,92 +444,110 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="name" expression=""/>
+        <default field="type" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="osm_id" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="type" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="osm_id" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+      </constraintExpressions>
+      <dataDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="osm_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="osm_id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="name" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="type" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="RuleRenderer">
         <rules key="{ecb93847-2af7-4c91-924d-9bdff3d2a3d6}">
-          <rule description="school" filter=" &quot;type&quot; in ('school', 'university')" key="{36731257-8ac8-4315-a02e-812f8e281ad4}" symbol="0" label="school"/>
-          <rule description="library" filter=" &quot;type&quot; = 'library'" key="{5a313a92-8ea7-40ec-9674-efa67f2b6c9a}" symbol="1" label="library"/>
-          <rule description="police" filter=" &quot;type&quot; = 'police'" key="{d1b39a70-a2d9-4d7d-a4c7-cc7d58ad5fbe}" symbol="2" label="police"/>
+          <rule key="{36731257-8ac8-4315-a02e-812f8e281ad4}" symbol="0" filter=" &quot;type&quot; in ('school', 'university')" label="school" description="school"/>
+          <rule key="{5a313a92-8ea7-40ec-9674-efa67f2b6c9a}" symbol="1" filter=" &quot;type&quot; = 'library'" label="library" description="library"/>
+          <rule key="{d1b39a70-a2d9-4d7d-a4c7-cc7d58ad5fbe}" symbol="2" filter=" &quot;type&quot; = 'police'" label="police" description="police"/>
         </rules>
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SvgMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="210,68,85,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="./symbols/education_university.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,2,2,255"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="30"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="Pixel"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol name="0" clip_to_extent="1" alpha="1" type="marker">
+            <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+              <prop v="0" k="angle"/>
+              <prop v="210,68,85,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="./symbols/education_university.svg" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="128,2,2,255" k="outline_color"/>
+              <prop v="1" k="outline_width"/>
+              <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="30" k="size"/>
+              <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="Pixel" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
-            <layer pass="0" class="SvgMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="210,68,85,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="./symbols/amenity_library.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,2,2,255"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="30"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="Pixel"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol name="1" clip_to_extent="1" alpha="1" type="marker">
+            <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+              <prop v="0" k="angle"/>
+              <prop v="210,68,85,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="./symbols/amenity_library.svg" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="128,2,2,255" k="outline_color"/>
+              <prop v="1" k="outline_width"/>
+              <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="30" k="size"/>
+              <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="Pixel" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
-            <layer pass="0" class="SvgMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="210,68,85,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="./symbols/amenity_police.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,2,2,255"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="30"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="Pixel"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol name="2" clip_to_extent="1" alpha="1" type="marker">
+            <layer enabled="1" locked="0" pass="0" class="SvgMarker">
+              <prop v="0" k="angle"/>
+              <prop v="210,68,85,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="./symbols/amenity_police.svg" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="128,2,2,255" k="outline_color"/>
+              <prop v="1" k="outline_width"/>
+              <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="30" k="size"/>
+              <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="Pixel" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
             </layer>
           </symbol>
         </symbols>
@@ -671,74 +697,58 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Oxygen-Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
-          <fontProperties description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer sizeLegend="0" diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory backgroundColor="#ffffff" minScaleDenominator="100000" maxScaleDenominator="1e+08" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" scaleDependency="Area" backgroundAlpha="255" lineSizeScale="0,0,0,0,0,0" sizeType="MM" width="15" barWidth="5" penColor="#000000" angleOffset="1440" enabled="0" penWidth="0" lineSizeType="MM" diagramOrientation="Up" penAlpha="255" transparency="0" height="15" sizeScale="0,0,0,0,0,0">
+          <fontProperties style="" description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0"/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
+        <symbol name="sizeSymbol" clip_to_extent="1" alpha="1" type="marker">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop v="0" k="angle"/>
+            <prop v="255,0,0,255" k="color"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="circle" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="solid" k="outline_style"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="2" k="size"/>
+            <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MM" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
           </layer>
         </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <DiagramLayerSettings obstacle="0" showColumn="-1" dist="0" yPosColumn="-1" linePlacementFlags="10" priority="0" zIndex="0" xPosColumn="-1" placement="0" showAll="1"/>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias name="" field="id" index="0"/>
+        <alias name="" field="osm_id" index="1"/>
+        <alias name="" field="name" index="2"/>
+        <alias name="" field="type" index="3"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="osm_id"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="osm_id" hidden="0" type="field" width="-1"/>
+          <column name="name" hidden="0" type="field" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -763,8 +773,11 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" readOnly="0" maximumScale="1e+08" simplifyDrawingHints="1" geometry="Polygon" simplifyLocal="1" simplifyDrawingTol="1" type="vector" minimumScale="100000" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>5.94417095184325994</xmin>
         <ymin>45.80793380737299714</ymin>
@@ -792,47 +805,65 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="name" expression=""/>
+        <default field="type" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="osm_id" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="type" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="osm_id" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+      </constraintExpressions>
+      <dataDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="osm_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="osm_id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="name" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="type" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="200,200,200,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,128,128,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="style" v="solid"/>
+          <symbol name="0" clip_to_extent="1" alpha="1" type="fill">
+            <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+              <prop v="0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="200,200,200,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="128,128,128,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="1" k="outline_width"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
-        <sizescale scalemethod="diameter"/>
+        <sizescale/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -979,70 +1010,55 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Oxygen-Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
-          <fontProperties description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer sizeLegend="0" diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory backgroundColor="#ffffff" minScaleDenominator="100000" maxScaleDenominator="1e+08" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" scaleDependency="Area" backgroundAlpha="255" lineSizeScale="0,0,0,0,0,0" sizeType="MM" width="15" barWidth="5" penColor="#000000" angleOffset="1440" enabled="0" penWidth="0" lineSizeType="MM" diagramOrientation="Up" penAlpha="255" transparency="0" height="15" sizeScale="0,0,0,0,0,0">
+          <fontProperties style="" description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
+        <symbol name="sizeSymbol" clip_to_extent="1" alpha="1" type="marker">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop v="0" k="angle"/>
+            <prop v="255,0,0,255" k="color"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="circle" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="solid" k="outline_style"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="2" k="size"/>
+            <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MM" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
           </layer>
         </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <DiagramLayerSettings obstacle="0" showColumn="-1" dist="0" yPosColumn="-1" linePlacementFlags="10" priority="0" zIndex="0" xPosColumn="-1" placement="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias name="" field="id" index="0"/>
+        <alias name="" field="osm_id" index="1"/>
+        <alias name="" field="name" index="2"/>
+        <alias name="" field="type" index="3"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="osm_id"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="osm_id" hidden="0" type="field" width="-1"/>
+          <column name="name" hidden="0" type="field" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -1070,8 +1086,11 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" readOnly="0" maximumScale="1e+08" simplifyDrawingHints="1" geometry="Polygon" simplifyLocal="1" simplifyDrawingTol="1" type="vector" minimumScale="100000" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>5.94417095184325994</xmin>
         <ymin>45.80793380737299714</ymin>
@@ -1099,95 +1118,113 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="name" expression=""/>
+        <default field="type" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="osm_id" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="type" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="osm_id" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+      </constraintExpressions>
+      <dataDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="osm_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="osm_id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="name" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="type" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="RuleRenderer">
         <rules key="{0f865c22-9459-4ae7-9586-03fad619ed73}">
-          <rule filter=" &quot;type&quot;  = 'yes'" key="{1867eecc-5da5-4c9e-b7cd-a633b76354a9}" symbol="0" label="building yes"/>
-          <rule description="building" filter=" &quot;type&quot; != 'yes'" key="{1f3f3f2c-ebaa-4a07-af68-21aac503bae1}" symbol="1" label="building"/>
+          <rule key="{1867eecc-5da5-4c9e-b7cd-a633b76354a9}" symbol="0" filter=" &quot;type&quot;  = 'yes'" label="building yes"/>
+          <rule key="{1f3f3f2c-ebaa-4a07-af68-21aac503bae1}" symbol="1" filter=" &quot;type&quot; != 'yes'" label="building" description="building"/>
         </rules>
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="0,0,255,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="50,50,50,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="style" v="no"/>
+          <symbol name="0" clip_to_extent="1" alpha="1" type="fill">
+            <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+              <prop v="0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="0,0,255,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="50,50,50,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="1" k="outline_width"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="no" k="style"/>
             </layer>
-            <layer pass="0" class="LinePatternFill" locked="0">
-              <prop k="angle" v="45"/>
-              <prop k="color" v="180,147,115,255"/>
-              <prop k="distance" v="10"/>
-              <prop k="distance_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="distance_unit" v="Pixel"/>
-              <prop k="line_width" v="1"/>
-              <prop k="line_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="line_width_unit" v="Pixel"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <symbol alpha="1" clip_to_extent="1" type="line" name="@0@1">
-                <layer pass="0" class="SimpleLine" locked="0">
-                  <prop k="capstyle" v="square"/>
-                  <prop k="customdash" v="20;10"/>
-                  <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-                  <prop k="customdash_unit" v="Pixel"/>
-                  <prop k="draw_inside_polygon" v="0"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="line_color" v="0,0,0,255"/>
-                  <prop k="line_style" v="solid"/>
-                  <prop k="line_width" v="2"/>
-                  <prop k="line_width_unit" v="Pixel"/>
-                  <prop k="offset" v="0"/>
-                  <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="Pixel"/>
-                  <prop k="use_custom_dash" v="1"/>
-                  <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <layer enabled="1" locked="0" pass="0" class="LinePatternFill">
+              <prop v="45" k="angle"/>
+              <prop v="180,147,115,255" k="color"/>
+              <prop v="10" k="distance"/>
+              <prop v="0,0,0,0,0,0" k="distance_map_unit_scale"/>
+              <prop v="Pixel" k="distance_unit"/>
+              <prop v="1" k="line_width"/>
+              <prop v="0,0,0,0,0,0" k="line_width_map_unit_scale"/>
+              <prop v="Pixel" k="line_width_unit"/>
+              <prop v="0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <symbol name="@0@1" clip_to_extent="1" alpha="1" type="line">
+                <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+                  <prop v="square" k="capstyle"/>
+                  <prop v="20;10" k="customdash"/>
+                  <prop v="0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                  <prop v="Pixel" k="customdash_unit"/>
+                  <prop v="0" k="draw_inside_polygon"/>
+                  <prop v="bevel" k="joinstyle"/>
+                  <prop v="0,0,0,255" k="line_color"/>
+                  <prop v="solid" k="line_style"/>
+                  <prop v="2" k="line_width"/>
+                  <prop v="Pixel" k="line_width_unit"/>
+                  <prop v="0" k="offset"/>
+                  <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                  <prop v="Pixel" k="offset_unit"/>
+                  <prop v="1" k="use_custom_dash"/>
+                  <prop v="0,0,0,0,0,0" k="width_map_unit_scale"/>
                 </layer>
               </symbol>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="200,200,200,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,128,128,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_unit" v="Pixel"/>
-              <prop k="style" v="solid"/>
+          <symbol name="1" clip_to_extent="1" alpha="1" type="fill">
+            <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+              <prop v="0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="200,200,200,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="128,128,128,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="1" k="outline_width"/>
+              <prop v="Pixel" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
             </layer>
           </symbol>
         </symbols>
@@ -1337,70 +1374,55 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Oxygen-Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
-          <fontProperties description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer sizeLegend="0" diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory backgroundColor="#ffffff" minScaleDenominator="100000" maxScaleDenominator="1e+08" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" scaleDependency="Area" backgroundAlpha="255" lineSizeScale="0,0,0,0,0,0" sizeType="MM" width="15" barWidth="5" penColor="#000000" angleOffset="1440" enabled="0" penWidth="0" lineSizeType="MM" diagramOrientation="Up" penAlpha="255" transparency="0" height="15" sizeScale="0,0,0,0,0,0">
+          <fontProperties style="" description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
+        <symbol name="sizeSymbol" clip_to_extent="1" alpha="1" type="marker">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop v="0" k="angle"/>
+            <prop v="255,0,0,255" k="color"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="circle" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="solid" k="outline_style"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="2" k="size"/>
+            <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MM" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
           </layer>
         </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <DiagramLayerSettings obstacle="0" showColumn="-1" dist="0" yPosColumn="-1" linePlacementFlags="10" priority="0" zIndex="0" xPosColumn="-1" placement="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias name="" field="id" index="0"/>
+        <alias name="" field="osm_id" index="1"/>
+        <alias name="" field="name" index="2"/>
+        <alias name="" field="type" index="3"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="osm_id"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="osm_id" hidden="0" type="field" width="-1"/>
+          <column name="name" hidden="0" type="field" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -1428,8 +1450,11 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" readOnly="0" maximumScale="1e+08" simplifyDrawingHints="1" geometry="Line" simplifyLocal="1" simplifyDrawingTol="1" type="vector" minimumScale="100000" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>5.93434762954712003</xmin>
         <ymin>45.81843948364259944</ymin>
@@ -1457,75 +1482,117 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="type" expression=""/>
+        <default field="name" expression=""/>
+        <default field="tunnel" expression=""/>
+        <default field="bridge" expression=""/>
+        <default field="oneway" expression=""/>
+        <default field="ref" expression=""/>
+        <default field="z_order" expression=""/>
+        <default field="access" expression=""/>
+        <default field="service" expression=""/>
+        <default field="class" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="osm_id" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="type" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="tunnel" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="bridge" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="oneway" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="ref" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="z_order" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="access" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="service" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="class" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="osm_id" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="tunnel" exp="" desc=""/>
+        <constraint field="bridge" exp="" desc=""/>
+        <constraint field="oneway" exp="" desc=""/>
+        <constraint field="ref" exp="" desc=""/>
+        <constraint field="z_order" exp="" desc=""/>
+        <constraint field="access" exp="" desc=""/>
+        <constraint field="service" exp="" desc=""/>
+        <constraint field="class" exp="" desc=""/>
+      </constraintExpressions>
+      <dataDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="osm_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="osm_id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="type" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="name" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="tunnel">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="tunnel" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="bridge">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="bridge" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="oneway">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="oneway" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="ref">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="ref" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="z_order">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="z_order" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="access">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="access" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="service">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="service" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="class">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="class" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="square"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="Pixel"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="100,155,100,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="2"/>
-              <prop k="line_width_unit" v="Pixel"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="Pixel"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <symbol name="0" clip_to_extent="1" alpha="1" type="line">
+            <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+              <prop v="square" k="capstyle"/>
+              <prop v="5;2" k="customdash"/>
+              <prop v="0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+              <prop v="Pixel" k="customdash_unit"/>
+              <prop v="0" k="draw_inside_polygon"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="100,155,100,255" k="line_color"/>
+              <prop v="solid" k="line_style"/>
+              <prop v="2" k="line_width"/>
+              <prop v="Pixel" k="line_width_unit"/>
+              <prop v="0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="Pixel" k="offset_unit"/>
+              <prop v="0" k="use_custom_dash"/>
+              <prop v="0,0,0,0,0,0" k="width_map_unit_scale"/>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
-        <sizescale scalemethod="diameter"/>
+        <sizescale/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -1672,82 +1739,74 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>50</layerTransparency>
-      <displayfield>name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Oxygen-Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
-          <fontProperties description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer sizeLegend="0" diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory backgroundColor="#ffffff" minScaleDenominator="100000" maxScaleDenominator="1e+08" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" scaleDependency="Area" backgroundAlpha="255" lineSizeScale="0,0,0,0,0,0" sizeType="MM" width="15" barWidth="5" penColor="#000000" angleOffset="1440" enabled="0" penWidth="0" lineSizeType="MM" diagramOrientation="Up" penAlpha="255" transparency="0" height="15" sizeScale="0,0,0,0,0,0">
+          <fontProperties style="" description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0"/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
+        <symbol name="sizeSymbol" clip_to_extent="1" alpha="1" type="marker">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop v="0" k="angle"/>
+            <prop v="255,0,0,255" k="color"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="circle" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="solid" k="outline_style"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="2" k="size"/>
+            <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MM" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
           </layer>
         </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <DiagramLayerSettings obstacle="0" showColumn="-1" dist="0" yPosColumn="-1" linePlacementFlags="10" priority="0" zIndex="0" xPosColumn="-1" placement="2" showAll="1"/>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias name="" field="id" index="0"/>
+        <alias name="" field="osm_id" index="1"/>
+        <alias name="" field="type" index="2"/>
+        <alias name="" field="name" index="3"/>
+        <alias name="" field="tunnel" index="4"/>
+        <alias name="" field="bridge" index="5"/>
+        <alias name="" field="oneway" index="6"/>
+        <alias name="" field="ref" index="7"/>
+        <alias name="" field="z_order" index="8"/>
+        <alias name="" field="access" index="9"/>
+        <alias name="" field="service" index="10"/>
+        <alias name="" field="class" index="11"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="osm_id"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="tunnel"/>
-          <column width="-1" hidden="0" type="field" name="bridge"/>
-          <column width="-1" hidden="0" type="field" name="oneway"/>
-          <column width="-1" hidden="0" type="field" name="ref"/>
-          <column width="-1" hidden="0" type="field" name="z_order"/>
-          <column width="-1" hidden="0" type="field" name="access"/>
-          <column width="-1" hidden="0" type="field" name="service"/>
-          <column width="-1" hidden="0" type="field" name="class"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="osm_id" hidden="0" type="field" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column name="name" hidden="0" type="field" width="-1"/>
+          <column name="tunnel" hidden="0" type="field" width="-1"/>
+          <column name="bridge" hidden="0" type="field" width="-1"/>
+          <column name="oneway" hidden="0" type="field" width="-1"/>
+          <column name="ref" hidden="0" type="field" width="-1"/>
+          <column name="z_order" hidden="0" type="field" width="-1"/>
+          <column name="access" hidden="0" type="field" width="-1"/>
+          <column name="service" hidden="0" type="field" width="-1"/>
+          <column name="class" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1772,8 +1831,11 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" readOnly="0" maximumScale="1e+08" simplifyDrawingHints="1" geometry="Line" simplifyLocal="1" simplifyDrawingTol="1" type="vector" minimumScale="100000" simplifyAlgorithm="0" simplifyMaxScale="1">
       <extent>
         <xmin>5.94267749786377042</xmin>
         <ymin>45.81213760375980115</ymin>
@@ -1801,75 +1863,117 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">postgres</provider>
-      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="type" expression=""/>
+        <default field="name" expression=""/>
+        <default field="tunnel" expression=""/>
+        <default field="bridge" expression=""/>
+        <default field="oneway" expression=""/>
+        <default field="ref" expression=""/>
+        <default field="z_order" expression=""/>
+        <default field="access" expression=""/>
+        <default field="service" expression=""/>
+        <default field="class" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="id" constraints="3"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="osm_id" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="type" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="name" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="tunnel" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="bridge" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="oneway" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="ref" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="z_order" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="access" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="service" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="class" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="id" exp="" desc=""/>
+        <constraint field="osm_id" exp="" desc=""/>
+        <constraint field="type" exp="" desc=""/>
+        <constraint field="name" exp="" desc=""/>
+        <constraint field="tunnel" exp="" desc=""/>
+        <constraint field="bridge" exp="" desc=""/>
+        <constraint field="oneway" exp="" desc=""/>
+        <constraint field="ref" exp="" desc=""/>
+        <constraint field="z_order" exp="" desc=""/>
+        <constraint field="access" exp="" desc=""/>
+        <constraint field="service" exp="" desc=""/>
+        <constraint field="class" exp="" desc=""/>
+      </constraintExpressions>
+      <dataDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="osm_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="osm_id" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="type" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="name" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="tunnel">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="tunnel" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="bridge">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="bridge" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="oneway">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="oneway" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="ref">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="ref" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="z_order">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="z_order" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="access">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="access" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="service">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="service" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="class">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype name="class" widgetv2type="TextEdit">
+          <widgetv2config UseHtml="0" labelOnTop="0" fieldEditable="1" IsMultiline="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="square"/>
-              <prop k="customdash" v="5;5"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="Pixel"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="100,155,100,255"/>
-              <prop k="line_style" v="dash"/>
-              <prop k="line_width" v="2"/>
-              <prop k="line_width_unit" v="Pixel"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="Pixel"/>
-              <prop k="use_custom_dash" v="1"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <symbol name="0" clip_to_extent="1" alpha="1" type="line">
+            <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+              <prop v="square" k="capstyle"/>
+              <prop v="5;5" k="customdash"/>
+              <prop v="0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+              <prop v="Pixel" k="customdash_unit"/>
+              <prop v="0" k="draw_inside_polygon"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="100,155,100,255" k="line_color"/>
+              <prop v="dash" k="line_style"/>
+              <prop v="2" k="line_width"/>
+              <prop v="Pixel" k="line_width_unit"/>
+              <prop v="0" k="offset"/>
+              <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="Pixel" k="offset_unit"/>
+              <prop v="1" k="use_custom_dash"/>
+              <prop v="0,0,0,0,0,0" k="width_map_unit_scale"/>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
-        <sizescale scalemethod="diameter"/>
+        <sizescale/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -2016,82 +2120,74 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>name</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Label"/>
-        <family fieldname="" name="Oxygen-Sans"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
-          <fontProperties description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer sizeLegend="0" diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory backgroundColor="#ffffff" minScaleDenominator="100000" maxScaleDenominator="1e+08" minimumSize="0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" scaleDependency="Area" backgroundAlpha="255" lineSizeScale="0,0,0,0,0,0" sizeType="MM" width="15" barWidth="5" penColor="#000000" angleOffset="1440" enabled="0" penWidth="0" lineSizeType="MM" diagramOrientation="Up" penAlpha="255" transparency="0" height="15" sizeScale="0,0,0,0,0,0">
+          <fontProperties style="" description="Oxygen-Sans,10,-1,5,50,0,0,0,0,0"/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
+        <symbol name="sizeSymbol" clip_to_extent="1" alpha="1" type="marker">
+          <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+            <prop v="0" k="angle"/>
+            <prop v="255,0,0,255" k="color"/>
+            <prop v="1" k="horizontal_anchor_point"/>
+            <prop v="bevel" k="joinstyle"/>
+            <prop v="circle" k="name"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="0,0,0,255" k="outline_color"/>
+            <prop v="solid" k="outline_style"/>
+            <prop v="0" k="outline_width"/>
+            <prop v="0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="diameter" k="scale_method"/>
+            <prop v="2" k="size"/>
+            <prop v="0,0,0,0,0,0" k="size_map_unit_scale"/>
+            <prop v="MM" k="size_unit"/>
+            <prop v="1" k="vertical_anchor_point"/>
           </layer>
         </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <DiagramLayerSettings obstacle="0" showColumn="-1" dist="0" yPosColumn="-1" linePlacementFlags="10" priority="0" zIndex="0" xPosColumn="-1" placement="2" showAll="1"/>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias name="" field="id" index="0"/>
+        <alias name="" field="osm_id" index="1"/>
+        <alias name="" field="type" index="2"/>
+        <alias name="" field="name" index="3"/>
+        <alias name="" field="tunnel" index="4"/>
+        <alias name="" field="bridge" index="5"/>
+        <alias name="" field="oneway" index="6"/>
+        <alias name="" field="ref" index="7"/>
+        <alias name="" field="z_order" index="8"/>
+        <alias name="" field="access" index="9"/>
+        <alias name="" field="service" index="10"/>
+        <alias name="" field="class" index="11"/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="">
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="osm_id"/>
-          <column width="-1" hidden="0" type="field" name="type"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="tunnel"/>
-          <column width="-1" hidden="0" type="field" name="bridge"/>
-          <column width="-1" hidden="0" type="field" name="oneway"/>
-          <column width="-1" hidden="0" type="field" name="ref"/>
-          <column width="-1" hidden="0" type="field" name="z_order"/>
-          <column width="-1" hidden="0" type="field" name="access"/>
-          <column width="-1" hidden="0" type="field" name="service"/>
-          <column width="-1" hidden="0" type="field" name="class"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column name="id" hidden="0" type="field" width="-1"/>
+          <column name="osm_id" hidden="0" type="field" width="-1"/>
+          <column name="type" hidden="0" type="field" width="-1"/>
+          <column name="name" hidden="0" type="field" width="-1"/>
+          <column name="tunnel" hidden="0" type="field" width="-1"/>
+          <column name="bridge" hidden="0" type="field" width="-1"/>
+          <column name="oneway" hidden="0" type="field" width="-1"/>
+          <column name="ref" hidden="0" type="field" width="-1"/>
+          <column name="z_order" hidden="0" type="field" width="-1"/>
+          <column name="access" hidden="0" type="field" width="-1"/>
+          <column name="service" hidden="0" type="field" width="-1"/>
+          <column name="class" hidden="0" type="field" width="-1"/>
+          <column hidden="1" type="actions" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitfilepath></editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -2116,106 +2212,109 @@ def my_form_open(dialog, layer, feature):
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
   </projectlayers>
   <properties>
-    <WMSRootName type="QString">OSM</WMSRootName>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSUrl type="QString"></WMSUrl>
     <Variables>
       <variableNames type="QStringList"/>
       <variableValues type="QStringList"/>
     </Variables>
     <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSOnlineResource type="QString">http://osm.org</WMSOnlineResource>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
-    <WMSServiceTitle type="QString">OSM</WMSServiceTitle>
-    <WFSLayers type="QStringList">
-      <value>osm_roads20160707115518827</value>
-    </WFSLayers>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WCSLayers type="QStringList"/>
     <Measure>
       <Ellipsoid type="QString">NONE</Ellipsoid>
     </Measure>
-    <WMSPrecision type="QString">8</WMSPrecision>
-    <WFSTLayers>
-      <Insert type="QStringList"/>
-      <Update type="QStringList"/>
-      <Delete type="QStringList"/>
-    </WFSTLayers>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <Digitizing>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnapToList type="QStringList"/>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <LayerSnappingEnabledList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList"/>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList"/>
+      <LayerSnappingList type="QStringList"/>
+    </Digitizing>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <DefaultStyles>
+      <Line type="QString"></Line>
+      <AlphaInt type="int">255</AlphaInt>
+      <Fill type="QString"></Fill>
+      <ColorRamp type="QString"></ColorRamp>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+    </DefaultStyles>
+    <WMSServiceTitle type="QString">OSM</WMSServiceTitle>
+    <Gui>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WFSUrl type="QString"></WFSUrl>
     <WFSLayersPrecision>
       <osm_roads20160707102729660 type="int">8</osm_roads20160707102729660>
       <osm_roads20160707115518827 type="int">8</osm_roads20160707115518827>
     </WFSLayersPrecision>
-    <Digitizing>
-      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
-      <LayerSnappingList type="QStringList"/>
-      <LayerSnappingEnabledList type="QStringList"/>
-      <SnappingMode type="QString">current_layer</SnappingMode>
-      <AvoidIntersectionsList type="QStringList"/>
-      <LayerSnappingToleranceUnitList type="QStringList"/>
-      <LayerSnapToList type="QStringList"/>
-      <DefaultSnapType type="QString">off</DefaultSnapType>
-      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
-      <LayerSnappingToleranceList type="QStringList"/>
-    </Digitizing>
-    <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-    </Gui>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <Identify>
-      <disabledLayers type="QStringList"/>
-    </Identify>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WCSLayers type="QStringList"/>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <SpatialRefSys>
       <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
       <ProjectCRSID type="int">3452</ProjectCRSID>
     </SpatialRefSys>
-    <DefaultStyles>
-      <Fill type="QString"></Fill>
-      <Line type="QString"></Line>
-      <Marker type="QString"></Marker>
-      <RandomColors type="bool">true</RandomColors>
-      <AlphaInt type="int">255</AlphaInt>
-      <ColorRamp type="QString"></ColorRamp>
-    </DefaultStyles>
-    <WMSFees type="QString">conditions unknown</WMSFees>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <WMSUrl type="QString"></WMSUrl>
+    <WMSRootName type="QString">OSM</WMSRootName>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WFSTLayers>
+      <Delete type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WFSLayers type="QStringList">
+      <value>osm_roads20160707115518827</value>
+    </WFSLayers>
+    <WMSOnlineResource type="QString">http://osm.org</WMSOnlineResource>
   </properties>
   <visibility-presets/>
 </qgis>
