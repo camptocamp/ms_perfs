@@ -4,7 +4,7 @@ set -e
 COMPOSE="docker-compose -f docker-compose.yml -f docker-compose-perfs.yml"
 
 ${COMPOSE} stop
-${COMPOSE} rm -f --all
+${COMPOSE} rm -f
 ${COMPOSE} build
 ${COMPOSE} up --abort-on-container-exit || true
 
