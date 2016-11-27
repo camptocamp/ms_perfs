@@ -23,7 +23,7 @@
     <recycling>false</recycling>
     <tilePriority>5</tilePriority>
     <tileThreads>7</tileThreads>
-    <memoryCapacity>0.5</memoryCapacity>
+    <memoryCapacity>0.25</memoryCapacity>
     <memoryThreshold>0.75</memoryThreshold>
     <imageIOCache>false</imageIOCache>
     <pngAcceleration>false</pngAcceleration>
@@ -142,7 +142,7 @@
     <queueType>UNBOUNDED</queueType>
     <imageIOCacheThreshold>10240</imageIOCacheThreshold>
   </coverageAccess>
-  <updateSequence>51</updateSequence>
+  <updateSequence>52</updateSequence>
   <featureTypeCacheSize>0</featureTypeCacheSize>
   <globalServices>true</globalServices>
   <xmlPostRequestLogBufferSize>1024</xmlPostRequestLogBufferSize>
