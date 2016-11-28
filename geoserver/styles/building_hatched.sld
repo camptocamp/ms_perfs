@@ -27,14 +27,14 @@
                       <se:SvgParameter name="stroke-width">2</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>10</se:Size>
+                  <se:Size>15</se:Size>
                   <se:Rotation>45</se:Rotation>
                 </se:Graphic>
               </se:GraphicFill>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
@@ -55,7 +55,7 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>

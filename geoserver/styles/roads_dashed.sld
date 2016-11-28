@@ -25,7 +25,7 @@
 						<Stroke>
 							<CssParameter name="stroke">#649B64</CssParameter>
                             <CssParameter name="stroke-width">2</CssParameter>
-                            <CssParameter name="stroke-dasharray">5 5</CssParameter>
+                            <CssParameter name="stroke-dasharray">6 4</CssParameter>
 						</Stroke>
 					</LineSymbolizer>
 				</Rule>
