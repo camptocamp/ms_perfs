@@ -1,5 +1,10 @@
 # Performance comparison for MapServer, QGIS server and GeoServer
 
+## Dependencies
+
+* docker-compose: 1.8.1
+* docker: 1.10.2
+
 ## Setup
 
 You must first setup a DB by importing OSM data (for Switzerland) in it.
