@@ -5,5 +5,10 @@ gatling:
     - geoserver
     - qgis2
     - qgis3
+  environment:
+    - USERS
+    - BASE_URLS
+    - WARMUP
+    - TIME_PER_TEST
   volumes:
     - ./perfs/results:/opt/gatling/results

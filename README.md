@@ -43,6 +43,13 @@ You can open the `test.qgs` project with QGIS to browse them.
 ./measure.sh
 ```
 
+You can tune what test is run with those variables (shown here with the default values):
+
+* WARMUP=1
+* USERS="1 2 5 10 20 40"
+* BASE_URLS="http://geoserver:8080/OSM/ows|GeoServer,http://mapserver/|MapServer,http://qgis2/|QGIS2,http://qgis3/|QGIS3"
+* TIME_PER_REQUEST=120
+
 
 ## Editing the layers provided
 
