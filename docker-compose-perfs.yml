@@ -3,6 +3,7 @@ gatling:
   links:
     - mapserver
     - geoserver
-    - qgis
+    - qgis2
+    - qgis3
   volumes:
     - ./perfs/results:/opt/gatling/results

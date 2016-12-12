@@ -12,13 +12,19 @@ do
     sleep 1
 done
 
-until wget "http://qgis/?SERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
+until wget "http://qgis2/?SERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
 do
-    echo "Waiting for QGIS"
+    echo "Waiting for QGIS2"
     sleep 1
 done
 
-export base_urls="http://geoserver:8080/OSM/ows|GeoServer,http://mapserver/|MapServer,http://qgis/|QGIS"
+until wget "http://qgis3/?SERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
+do
+    echo "Waiting for QGIS3"
+    sleep 1
+done
+
+export base_urls="http://geoserver:8080/OSM/ows|GeoServer,http://mapserver/|MapServer,http://qgis2/|QGIS2,http://qgis3/|QGIS3"
 
 echo "warmup round (results are trashed)"
 export nb_users=1
