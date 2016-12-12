@@ -29,7 +29,7 @@ geoserver:
   links:
     - db
 
-qgis:
+qgis3:
   image: camptocamp/qgis-server:3
   environment:
     QGIS_SERVER_LOG_LEVEL: 3
@@ -37,5 +37,16 @@ qgis:
     - 8083:80
   volumes:
     - ./qgis:/project
+  links:
+    - db
+
+qgis2:
+  image: camptocamp/qgis-server:2
+  environment:
+    QGIS_SERVER_LOG_LEVEL: 3
+  ports:
+    - 8084:80
+  volumes:
+    - ./qgis2:/project
   links:
     - db
