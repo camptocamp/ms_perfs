@@ -3,6 +3,7 @@ gatling:
   links:
     - mapserver
     - geoserver
+    - geoserver-jai
     - qgis2
     - qgis3
   environment:
