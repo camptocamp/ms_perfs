@@ -3,5 +3,6 @@
 /perfs/results/*
 /qgis/project_ext.qgs
 /summary.csv
+/measures
 *~
 .~*#

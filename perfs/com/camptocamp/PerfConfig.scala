@@ -24,6 +24,7 @@ object PerfConfig {
   val minY = 46.6
   val maxX = 8.2
   val maxY = 47
+  // Default value, overriden in perfs/run.sh
   val defaultBaseUrls = "http://localhost:8081/|MapServer,http://localhost:8083/|QGIS,http://localhost:8082/OSM/ows|GeoServer"
   val baseUrlMap: Map[String, String] = getConf("base_urls", defaultBaseUrls).split(",").map(a => {
     val s = a.split("\\|")
