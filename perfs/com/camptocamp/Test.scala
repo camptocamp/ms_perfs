@@ -16,7 +16,12 @@ class Test extends Simulation {
   val fetchTile = group("${layer}") {
     exec(
       http("${level}").
-        get("${base_url}?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=${minY},${minX},${maxY},${maxX}&LAYERS=${layer}" + PerfConfig.commonParams))
+        get("${base_url}?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&" +
+            "BBOX=${minY},${minX},${maxY},${maxX}&LAYERS=${layer}" +
+            PerfConfig.commonParams).check(
+                header("Content-Type").is("image/png")
+            )
+    )
   }
 
 
