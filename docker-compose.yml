@@ -34,7 +34,7 @@ geoserver-jai:
   ports:
     - 8085:8080
   environment:
-    - CATALINA_OPTS: ""
+    CATALINA_OPTS: ""
   volumes:
     - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
   links:
