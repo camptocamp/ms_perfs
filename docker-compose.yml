@@ -33,12 +33,12 @@ qgis3:
   image: camptocamp/qgis-server:3
   environment:
     QGIS_SERVER_LOG_LEVEL: 3
-    CONFIG_PATH: /root/.qgis3
+    QGIS_OPTIONS_PATH: /root/
   ports:
     - 8083:80
   volumes:
     - ./qgis:/project
-    - ./qgis/.qgis3:/root/.qgis3
+    - ./qgis/QGIS:/root/QGIS
   links:
     - db
 
