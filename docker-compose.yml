@@ -29,6 +29,17 @@ geoserver:
   links:
     - db
 
+geoserver-jai:
+  image: camptocamp/geoserver:2.9
+  ports:
+    - 8085:8080
+  environment:
+    CATALINA_OPTS: ""
+  volumes:
+    - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
+  links:
+    - db
+
 qgis3:
   image: camptocamp/qgis-server:3
   environment:

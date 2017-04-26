@@ -12,6 +12,12 @@ do
     sleep 1
 done
 
+until wget "http://geoserver-jai:8080/?SERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
+do
+    echo "Waiting for geoserver-jai"
+    sleep 1
+done
+
 until wget "http://qgis2/?SERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
 do
     echo "Waiting for QGIS2"
@@ -24,7 +30,7 @@ do
     sleep 1
 done
 
-export base_urls="${BASE_URLS:-http://geoserver:8080/OSM/ows|GeoServer,http://mapserver/|MapServer,http://qgis2/|QGIS2,http://qgis3/|QGIS3}"
+export base_urls="${BASE_URLS:-http://geoserver:8080/OSM/ows|GeoServer,http://geoserver-jai:8080/OSM/ows|GeoServer-jai,http://mapserver/|MapServer,http://qgis2/|QGIS2,http://qgis3/|QGIS3}"
 echo "base_urls=$base_urls"
 
 warmup=${WARMUP:-1}
