@@ -44,7 +44,7 @@ qgis3:
   environment:
     QGIS_SERVER_LOG_LEVEL: 3
     QGIS_OPTIONS_PATH: /root/
-    QGIS_SERVER_PARALLEL_RENDERING: true
+    QGIS_SERVER_PARALLEL_RENDERING: "true"
     QGIS_SERVER_MAX_THREADS: 8
   ports:
     - 8083:80

@@ -27,7 +27,7 @@ function saveWMSImages {
     echo $SERVER ${PORT[${SERVER}]}
       echo $LAYER
       echo "http://localhost:${PORT[${SERVER}]}/${SCRIPT[${SERVER}]}?SERVICE=WMS&REQUEST=GetMap&LAYERS=${LAYER}&CRS=${CRS[${SERVER}]}&VERSION=1.3.0&BBOX=${BBOX}&WIDTH=400&HEIGHT=400&FORMAT=image/png"
-      curl -s "http://localhost:${PORT[${SERVER}]}/${SCRIPT[${SERVER}]}?SERVICE=WMS&REQUEST=GetMap&LAYERS=${LAYER}&CRS=${CRS[${SERVER}]}&VERSION=1.3.0&BBOX=${BBOX}&WIDTH=400&HEIGHT=400&FORMAT=image/png" -o ${SERVER}/${LAYER}${SUFFIX}.png
+      #curl -s "http://localhost:${PORT[${SERVER}]}/${SCRIPT[${SERVER}]}?SERVICE=WMS&REQUEST=GetMap&LAYERS=${LAYER}&CRS=${CRS[${SERVER}]}&VERSION=1.3.0&BBOX=${BBOX}&WIDTH=400&HEIGHT=400&FORMAT=image/png" -o ${SERVER}/${LAYER}${SUFFIX}.png
   done
 }
 

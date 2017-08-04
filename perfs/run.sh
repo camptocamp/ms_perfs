@@ -42,8 +42,8 @@ then
     export time=30
     gatling.sh -sf $GATLING_HOME/user-files/simulations -s com.camptocamp.Test
 
-    rm -r $GATLING_HOME/results/*
 fi
+rm -r $GATLING_HOME/results/*
 
 export time=${TIME_PER_TEST:-120}  # time to keep measing for a given server and a given zoom level
 users=${USERS:-1 2 5 10 20 40}

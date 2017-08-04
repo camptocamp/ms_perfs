@@ -2,7 +2,8 @@
 /geoserver/logs
 /perfs/results/*
 /qgis/project_ext.qgs
-/summary.csv
+/archives/*.csv
+/archives/*.html
 /measures
 *~
 .~*#
