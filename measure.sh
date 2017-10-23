@@ -14,4 +14,4 @@ ${COMPOSE} build
 ${COMPOSE} up --abort-on-container-exit || true
 
 mkdir -p archives
-./summary.py --csv archives/summary$SUFFIX.csv --html archives/summary$SUFFIX.html
+./summary.py --csv --html --prefix archives/summary_

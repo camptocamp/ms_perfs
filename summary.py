@@ -145,8 +145,9 @@ def gen_html(filename, summary, errors, run_time):
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--csv', default=None, help="The CSV file to generate")
-    parser.add_argument('--html', default=None, help="The HTML file to generate")
+    parser.add_argument('--prefix', default=None, help="The prefix of the files to generate")
+    parser.add_argument('--csv', default=False, action='store_true', help="Generate the CSV file")
+    parser.add_argument('--html', default=False, action='store_true', help="Generate the HTML file")
     return parser.parse_args()
 
 
@@ -159,9 +160,12 @@ def main():
         if FILE_RE.match(dirname):
             run_time = read_file(os.path.join(BASE_PATH, dirname, 'simulation.log'), summary, errors)
 
-    if args.csv is not None:
-        gen_csv(args.csv, summary, errors)
-    if args.html is not None:
-        gen_html(args.html, summary, errors, run_time)
+    day = time.strftime('%Y-%m-%d', time.localtime(run_time/1000))
+
+    prefix = args.prefix + day
+    if args.csv:
+        gen_csv(prefix + '.csv', summary, errors)
+    if args.html:
+        gen_html(prefix + '.html', summary, errors, run_time)
 
 main()
