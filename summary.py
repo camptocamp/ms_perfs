@@ -78,7 +78,7 @@ def gen_html(filename, summary, errors, run_time):
         for server, per_server in per_user.items():
             for layer, per_layer in per_server.items():
                 for level, stats in per_layer.items():
-                    data.setdefault(layer, {}).setdefault(level, {}).setdefault(nb_users, [0] * len(servers))[servers.index(server)] = stats[1]/stats[0]
+                    data.setdefault(layer, {}).setdefault(int(level), {}).setdefault(int(nb_users), [0] * len(servers))[servers.index(server)] = stats[1]/stats[0]
 
     with open(filename, "w") as html:
         html.write("""
