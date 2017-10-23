@@ -31,18 +31,19 @@ def flatten_dict(dico, row, callback):
 def read_file(path, summary, errors):
     run_time = None
     with open(path, 'r') as file:
+        print('reading %s' % path)
         reader = csv.reader(file, delimiter='\t')
         for row in reader:
             if row[0] == 'REQUEST':
                 _, _, _, group, level, start, stop, status, _ = row
                 group = group.split(',') + [level]
-                if status == "OK":
+                if status == 'OK':
                     time = int(stop) - int(start)
                     merge_dict(summary, group, time)
                 else:
                     merge_dict(errors, group, 1)
             elif row[0] == 'RUN':
-                run_time = 1501754177650
+                run_time = int(row[4])
     return run_time
 
 
