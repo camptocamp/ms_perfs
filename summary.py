@@ -96,6 +96,56 @@ def gen_html(filename, summary, errors, run_time):
         html.write("""
       }
 
+      function hidableSeries(chart, data, options) {
+        var columns = [];
+        var series = {};
+        for (var i = 0; i < data.getNumberOfColumns(); i++) {
+          columns.push(i);
+          if (i > 0) {
+            series[i - 1] = {};
+          }
+        }
+        var prevCol = null;
+
+        google.visualization.events.addListener(chart, 'select', function () {
+          var sel = chart.getSelection();
+          // if selection length is 0, we deselected an element
+          // if row is undefined, we clicked on the legend
+          if (sel.length > 0 && sel[0].row === null && sel[0].column !== prevCol) {
+            var col = sel[0].column;
+            prevCol = col;
+
+            for (var i = 1; i < data.getNumberOfColumns(); i++) {
+              if (i == col) {
+                columns[i] = i;
+                series[i - 1] = {};
+              } else {
+                columns[i] = {
+                  label: data.getColumnLabel(i),
+                  type: data.getColumnType(i),
+                  calc: function () {
+                    return null;
+                  }
+                };
+                // grey out the legend entry
+                series[i - 1].color = '#CCCCCC';
+              }
+            }
+          } else {
+            prevCol = null;
+            for (var i = 1; i < data.getNumberOfColumns(); i++) {
+              columns[i] = i;
+              series[i - 1] = {};
+            }
+          }
+
+          var view = new google.visualization.DataView(data);
+          view.setColumns(columns);
+          options.series = series;
+          chart.draw(view, options);
+        });
+      }
+
       function drawCharts() {
         var options = {
           hAxis: {title: 'Nb users', minValue: 1},
@@ -109,17 +159,18 @@ def gen_html(filename, summary, errors, run_time):
         for layer, per_layer in data.items():
             for level, per_level in per_layer.items():
                 html.write("""
-        var data = google.visualization.arrayToDataTable([
-          ['Nb users', '%(columns)s']""" % {'columns': "','".join(servers)})
+        var data_%(layer)s = google.visualization.arrayToDataTable([
+          ['Nb users', '%(columns)s']""" % {'layer': layer, 'columns': "','".join(servers)})
                 for nb_users, per_nb in sorted(per_level.items()):
                     html.write("\n         ,[%s, %s]" % (nb_users, ",".join(map(lambda x: str(x) if x > 0.0 else 'null', per_nb))))
                 html.write("""
         ]);
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div_%(layer)s_%(level)s'));
-
-        chart.draw(data, options);
+        var chart_%(layer)s = new google.visualization.ScatterChart(document.getElementById('chart_div_%(layer)s_%(level)s'));
+        chart_%(layer)s.draw(data_%(layer)s, options);
+        hidableSeries(chart_%(layer)s, data_%(layer)s, options);
                 """ % {'layer': layer, 'level': level})
+
 
         html.write("""
       }
