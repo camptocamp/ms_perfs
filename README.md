@@ -40,7 +40,8 @@ You can open the `test.qgs` project with QGIS to browse them.
 ## Run the perf tests
 
 ```bash
-./measure.sh
+make pull  # to update the images
+make run
 ```
 
 You can tune what test is run with those variables (shown here with the default values):
