@@ -20,7 +20,7 @@ mapserver:
     - db
 
 geoserver:
-  image: camptocamp/geoserver:2.9
+  image: camptocamp/geoserver:2.13
   ports:
     - 8082:8080
   volumes:
@@ -29,7 +29,7 @@ geoserver:
     - db
 
 geoserver-jai:
-  image: camptocamp/geoserver:2.9
+  image: camptocamp/geoserver:2.13
   ports:
     - 8085:8080
   environment:
