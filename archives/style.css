@@ -1,0 +1,20 @@
+body {
+  background-color: #eff0f1;
+}
+.main {
+  margin: auto;
+  background-color: white;
+  padding: 5px;
+  width: 80%;
+  border: 1px solid #bac8b8;
+}
+
+h1 {
+    color: #ff5600;
+
+}
+
+.footer {
+    width: 100%;
+    background-color: #4b4b4d;
+}
