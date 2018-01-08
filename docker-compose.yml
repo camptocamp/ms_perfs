@@ -42,7 +42,8 @@ geoserver-jai:
 qgis3:
   image: camptocamp/qgis-server:3
   environment:
-    QGIS_SERVER_LOG_LEVEL: 3
+    QGIS_SERVER_LOG_LEVEL: 1
+    QGIS_SERVER_LOG_FILE: /project/qgis_3.log
     QGIS_OPTIONS_PATH: /root/
     QGIS_SERVER_PARALLEL_RENDERING: "true"
     QGIS_SERVER_MAX_THREADS: 8
@@ -57,7 +58,8 @@ qgis3:
 qgis2:
   image: camptocamp/qgis-server:2
   environment:
-    QGIS_SERVER_LOG_LEVEL: 3
+    QGIS_SERVER_LOG_LEVEL: 1
+    QGIS_SERVER_LOG_FILE: /project/qgis_2.log
   ports:
     - 8084:80
   volumes:
