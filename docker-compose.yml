@@ -54,6 +54,21 @@ qgis3:
   links:
     - db
 
+qgis3-trust:
+  image: camptocamp/qgis-server:3
+  environment:
+    QGIS_SERVER_LOG_LEVEL: 3
+    QGIS_OPTIONS_PATH: /root/
+    QGIS_SERVER_PARALLEL_RENDERING: "true"
+    QGIS_SERVER_MAX_THREADS: 8
+  ports:
+    - 8083:80
+  volumes:
+    - ./qgis-trust:/project
+    - ./qgis/QGIS:/root/QGIS
+  links:
+    - db
+
 qgis2:
   image: camptocamp/qgis-server:2
   environment:
