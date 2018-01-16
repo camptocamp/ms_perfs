@@ -31,7 +31,7 @@ object PerfConfig {
     (s(0), s(1))
   }).toMap
   val baseUrls: Seq[String] = baseUrlMap.keys.toSeq
-  val layers= getConf("layers","amenities_class,roads_dashed,building_hatched|amenities_class|roads_dashed|building_hatched|amenities_simple|roads_simple|building_simple").split("|")
+  val layers = getConf("layers", "amenities_class,roads_dashed,building_hatched|amenities_class|roads_dashed|building_hatched|amenities_simple|roads_simple|building_simple").split("\\|")
   val nbUsers: Int = getConf("nb_users", 1)
   val time: Int = getConf("time", 30)
 
