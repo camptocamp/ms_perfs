@@ -17,7 +17,7 @@ class Road extends Simulation {
       //get("?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=${minY},${minX},${maxY},${maxX}&LAYERS=roads_dashed" + PerfConfig.commonParams))
       get("?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=${minY},${minX},${maxY},${maxX}&LAYERS=roads_simple" + PerfConfig.commonParams))
 
-  val steps: Seq[Int] = 0 to PerfConfig.nbSteps
+  val steps: Seq[Int] = (PerfConfig.startLevel to PerfConfig.endLevel)
   val scn = scenario("User").foreach(steps.reverse, "level") {
     during(20 seconds, "tries", false) {
       exec(session => PerfConfig.addRandomTileInfo(session)).exec(fetchTile)

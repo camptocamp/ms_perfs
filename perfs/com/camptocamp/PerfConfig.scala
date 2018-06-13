@@ -18,7 +18,8 @@ object PerfConfig {
   }
 
   val stepFactor = 2
-  val nbSteps = 7
+  val startLevel: Int = getConf("start_level", 0)
+  val endLevel: Int = getConf("end_level", 7)
   val ratio = 4.0 / 3.0
   val minX = 7.2
   val minY = 46.6
@@ -52,6 +53,7 @@ object PerfConfig {
     val x = minX + (random.nextDouble() * (maxWidth - width))
     val y = minY + (random.nextDouble() * (maxHeight - height))
     val layer = layers(random.nextInt(layers.length))
+    val layergroup = layer.replace(",", "_")
     Map("minX" -> x, "minY" -> y, "maxX" -> (x + width), "maxY" -> (y + height), "level" -> level, "layer" -> layer)
   }
 
