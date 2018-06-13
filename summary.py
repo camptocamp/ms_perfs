@@ -148,8 +148,14 @@ def gen_html(filename, summary, errors, run_time):
 
       function drawCharts() {
         var options = {
-          hAxis: {title: 'Nb users', minValue: 1},
-          vAxis: {title: 'Render time [ms]', minValue: 0},
+          hAxis: {
+            title: 'Number of users',
+            scaleType: 'log'
+          },
+          vAxis: {
+            title: 'Render time [ms]',
+            minValue: 0
+          },
           legend: 'right',
           lineWidth: 2,
         };
