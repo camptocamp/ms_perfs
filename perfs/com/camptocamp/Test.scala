@@ -13,7 +13,7 @@ class Test extends Simulation {
     .acceptHeader("image/png")
     .acceptEncodingHeader("gzip, deflate")
 
-  val fetchTile = group("${layer}") {
+  val fetchTile = group("${layergroup}") {
     exec(
       http("${level}").
         get("${base_url}?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&" +

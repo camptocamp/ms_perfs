@@ -54,7 +54,7 @@ object PerfConfig {
     val y = minY + (random.nextDouble() * (maxHeight - height))
     val layer = layers(random.nextInt(layers.length))
     val layergroup = layer.replace(",", "_")
-    Map("minX" -> x, "minY" -> y, "maxX" -> (x + width), "maxY" -> (y + height), "level" -> level, "layer" -> layer)
+    Map("minX" -> x, "minY" -> y, "maxX" -> (x + width), "maxY" -> (y + height), "level" -> level, "layer" -> layer, "layergroup" -> layergroup)
   }
 
   def addRandomTileInfo(session: Session): Session = {
