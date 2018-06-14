@@ -18,3 +18,8 @@ h1 {
     width: 100%;
     background-color: #4b4b4d;
 }
+
+.chart {
+    width: 100%; /* 800px; */
+    heigth: 800px;
+}
