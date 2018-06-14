@@ -118,35 +118,38 @@ def gen_html(filename, summary, run_time):
 
       function filterLevel(level) {""")
         for level in levels:
-            html.write('      var elems = document.getElementsByClassName("level_%(level)s");\n' % {'level': level})
-            html.write('      for (var i = 0; i < elems.length; i++) elems[i].style.display = ((level === %(level)s || level === "all") ? "block" : "none");\n' % {'level': level})
+            html.write("""
+        var elems = document.getElementsByClassName("level_%(level)s");
+        for (var i = 0; i < elems.length; i++)
+          elems[i].style.display = ((level === %(level)s || level === "all") ? "block" : "none");""" % {'level': level})
         html.write("""
       }
 
       function hidableSeries(chart, data, options) {
+        var visible_columns = [];
         var columns = [];
         var series = {};
         for (var i = 0; i < data.getNumberOfColumns(); i++) {
+          visible_columns.push(true);
           columns.push(i);
           if (i > 0) {
             series[i - 1] = {};
           }
         }
-        var prevCol = null;
 
         google.visualization.events.addListener(chart, 'select', function () {
           var sel = chart.getSelection();
           // if selection length is 0, we deselected an element
           // if row is undefined, we clicked on the legend
-          if (sel.length > 0 && sel[0].row === null && sel[0].column !== prevCol) {
+          if (sel.length > 0 && sel[0].row === null) {
             var col = sel[0].column;
-            prevCol = col;
-
+            visible_columns[col] = !visible_columns[col];
             for (var i = 1; i < data.getNumberOfColumns(); i++) {
-              if (i == col) {
+              if (visible_columns[i]) {
                 columns[i] = i;
                 series[i - 1] = {};
-              } else {
+              }
+              else {
                 columns[i] = {
                   label: data.getColumnLabel(i),
                   type: data.getColumnType(i),
@@ -158,18 +161,12 @@ def gen_html(filename, summary, run_time):
                 series[i - 1].color = '#CCCCCC';
               }
             }
-          } else {
-            prevCol = null;
-            for (var i = 1; i < data.getNumberOfColumns(); i++) {
-              columns[i] = i;
-              series[i - 1] = {};
-            }
-          }
 
-          var view = new google.visualization.DataView(data);
-          view.setColumns(columns);
-          options.series = series;
-          chart.draw(view, options);
+            var view = new google.visualization.DataView(data);
+            view.setColumns(columns);
+            options.series = series;
+            chart.draw(view, options);
+          }
         });
       }
 
