@@ -12,5 +12,7 @@ gatling:
     - BASE_URLS
     - WARMUP
     - TIME_PER_TEST
+    - START_LEVEL
+    - END_LEVEL
   volumes:
     - ./perfs/results:/opt/gatling/results
