@@ -7,6 +7,7 @@ import csv
 import os
 import re
 import time
+import json
 
 BASE_PATH = 'perfs/results'
 FILE_RE = re.compile(r'test-.*')
@@ -165,12 +166,21 @@ def gen_html(filename, summary, errors, run_time):
         for layer, per_layer in data.items():
             for level, per_level in per_layer.items():
                 html.write("""
-        var data_%(layer)s = google.visualization.arrayToDataTable([
-          ['Nb users', '%(columns)s']""" % {'layer': layer, 'columns': "','".join(servers)})
-                for nb_users, per_nb in sorted(per_level.items()):
-                    html.write("\n         ,[%s, %s]" % (nb_users, ",".join(map(lambda x: str(x) if x > 0.0 else 'null', per_nb))))
+        var data_%(layer)s = new google.visualization.DataTable();
+        data_%(layer)s.addColumn('number', 'Nb users');""" % {'layer': layer})
+                for server in servers:
+                    html.write("""
+        data_%(layer)s.addColumn('number', '%(server)s');""" % {'layer': layer, 'server': server})
                 html.write("""
-        ]);
+        data_%(layer)s.addRows(""" % {'layer': layer});
+                html.write("""
+        """.join(
+                    json.dumps([
+                        [nb_users] + list(map(lambda x: x if x > 0.0 else None, per_nb))
+                        for nb_users, per_nb in sorted(per_level.items())
+                    ], indent=4).splitlines()
+                ))
+                html.write(""");
 
         var chart_%(layer)s = new google.visualization.ScatterChart(document.getElementById('chart_div_%(layer)s_%(level)s'));
         chart_%(layer)s.draw(data_%(layer)s, options);
