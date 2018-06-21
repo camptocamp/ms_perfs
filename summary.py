@@ -267,26 +267,28 @@ def gen_html(filename, summary, run_time):
     </script>
   </head>
   <body>
-    <h1>Cartographic servers performances</h1>
-    Filter by level: <a href="javascript:filterLevel(\'all\')">all</a>""" % {'level': level})
+    <div class="main">
+      <h1>Cartographic servers performances</h1>
+      Filter by level: <a href="javascript:filterLevel(\'all\')">all</a>""" % {'level': level})
         for level in levels:
             html.write("""
-    <a href="javascript:filterLevel(%(level)s)">%(level)s</a>""" % {'level': level})
+      <a href="javascript:filterLevel(%(level)s)">%(level)s</a>""" % {'level': level})
         for layer, per_layer in sorted(data.items()):
             html.write("""
 
-    <h2>Layer: %s</h2>""" % layer)
+      <h2>Layer: %s</h2>""" % layer)
             for level, per_level in sorted(per_layer.items()):
                 html.write("""
 
-    <h3 class="level_%(level)s">Level: %(level)s</h3>""" % {'level': level})
+      <h3 class="level_%(level)s">Level: %(level)s</h3>""" % {'level': level})
                 html.write("""
-    <div class="chart avgtime level_%(level)s" id="chart_div_%(layer)s_%(level)s_avgtimes"></div>""" % {'layer': layer, 'level': level})
+      <div class="chart avgtime level_%(level)s" id="chart_div_%(layer)s_%(level)s_avgtimes"></div>""" % {'layer': layer, 'level': level})
                 html.write("""
-    <div class="chart errors level_%(level)s" id="chart_div_%(layer)s_%(level)s_errors"></div>""" % {'layer': layer, 'level': level})
+      <div class="chart errors level_%(level)s" id="chart_div_%(layer)s_%(level)s_errors"></div>""" % {'layer': layer, 'level': level})
         html.write("""
 
-    <p align="right">Generate on %(run_time)s</p>
+      <p align="right">Generate on %(run_time)s</p>
+    </div>
   </body>
 </html>
 """ % {'run_time': time.strftime('%a, %d %b %Y %H:%M:%S +0000', time.localtime(run_time/1000))})
