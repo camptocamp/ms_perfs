@@ -282,9 +282,11 @@ def gen_html(filename, summary, run_time):
 
       <h3 class="level_%(level)s">Level: %(level)s</h3>""" % {'level': level})
                 html.write("""
-      <div class="chart avgtime level_%(level)s" id="chart_div_%(layer)s_%(level)s_avgtimes"></div>""" % {'layer': layer, 'level': level})
+      <div class="chart-group">
+        <div class="chart avgtime level_%(level)s" id="chart_div_%(layer)s_%(level)s_avgtimes"></div>""" % {'layer': layer, 'level': level})
                 html.write("""
-      <div class="chart errors level_%(level)s" id="chart_div_%(layer)s_%(level)s_errors"></div>""" % {'layer': layer, 'level': level})
+        <div class="chart errors level_%(level)s" id="chart_div_%(layer)s_%(level)s_errors"></div>
+      </div>""" % {'layer': layer, 'level': level})
         html.write("""
 
       <p align="right">Generate on %(run_time)s</p>
