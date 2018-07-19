@@ -7,6 +7,8 @@ export USERS
 export BASE_URLS
 export WARMUP
 export TIME_PER_TEST
+export START_LEVEL
+export END_LEVEL
 
 echo "Running perf script at $(date)" 
 ${COMPOSE} stop
