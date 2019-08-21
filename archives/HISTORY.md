@@ -1,5 +1,10 @@
 # HISTORY
 
+## 2018-07-19
+
+* Improve Mapserver image to support SVG symbols.
+* Add pictures of WMS image for each layer with QGIS server:3
+
 ## 2018-06-14
 
 * Fix bug in graph
