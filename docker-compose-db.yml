@@ -1,5 +1,5 @@
 db:
-  image: camptocamp/postgresql:pg9.5-latest
+  image: camptocamp/postgres:9.5
   environment:
     POSTGRES_USER: docker
     POSTGRES_PASSWORD: docker
