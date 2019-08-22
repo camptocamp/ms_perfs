@@ -70,14 +70,3 @@ qgis3-trust:
     - ./qgis/QGIS:/root/QGIS
   links:
     - db
-
-qgis2:
-  image: camptocamp/qgis-server:2
-  environment:
-    QGIS_SERVER_LOG_LEVEL: 3
-  ports:
-    - 8084:80
-  volumes:
-    - ./qgis2:/project
-  links:
-    - db

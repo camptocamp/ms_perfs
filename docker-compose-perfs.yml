@@ -4,7 +4,6 @@ gatling:
     - mapserver
     - geoserver
     - geoserver-jai
-    - qgis2
     - qgis3
     - qgis3-trust
   environment:
