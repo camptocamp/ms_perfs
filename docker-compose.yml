@@ -69,6 +69,20 @@ qgis3-trust:
   links:
     - db
 
+qgis3-tornado:
+  image: 3liz/qgis3-map-service
+  environment:
+    QGSRV_LOGGING_LEVEL: INFO
+    QGSRV_SERVER_WORKERS: 10
+    QGSRV_CACHE_ROOTDIR: /projects
+    QGSRV_CACHE_SIZE:10
+  ports:
+    - 8087:8080
+  volumes:
+    - ./qgis:/projects
+  links:
+    - db
+
 qgis2:
   image: camptocamp/qgis-server:2
   environment:

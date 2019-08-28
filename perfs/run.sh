@@ -36,7 +36,13 @@ do
     sleep 1
 done
 
-export base_urls="${BASE_URLS:-http://geoserver:8080/OSM/ows|GeoServer,http://geoserver-jai:8080/OSM/ows|GeoServer-jai,http://mapserver/|MapServer,http://qgis2/|QGIS2,http://qgis3/|QGIS3,http://qgis3-trust/|QGIS3-Trust}"
+until wget "http://qgis3-tornado/?MAP=project.qgsSERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
+do
+    echo "Waiting for QGIS3-Tornado"
+    sleep 1
+done
+
+export base_urls="${BASE_URLS:-http://geoserver:8080/OSM/ows|GeoServer,http://geoserver-jai:8080/OSM/ows|GeoServer-jai,http://mapserver/|MapServer,http://qgis2/|QGIS2,http://qgis3/|QGIS3,http://qgis3-trust/|QGIS3-Trust,http://qgis3-tornado/?MAP=project.qgs|QGIS3-Tornado}"
 echo "base_urls=$base_urls"
 
 export start_level=${START_LEVEL:-0}
