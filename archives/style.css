@@ -1,6 +1,7 @@
 body {
   background-color: #eff0f1;
 }
+
 .main {
   margin: auto;
   background-color: white;
@@ -11,7 +12,6 @@ body {
 
 h1 {
     color: #ff5600;
-
 }
 
 .footer {
@@ -19,7 +19,12 @@ h1 {
     background-color: #4b4b4d;
 }
 
-.chart {
-    width: 100%; /* 800px; */
-    heigth: 800px;
+.chart-group {
+    text-align: center;
 }
+
+.chart {
+    width: 800px; 
+    margin: auto;
+}
+
