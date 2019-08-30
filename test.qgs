@@ -754,7 +754,7 @@
         <ymax>47.81562042236330257</ymax>
       </extent>
       <id>osm_roads20160707094606596</id>
-      <datasource>dbname='gis' host=localhost port=15432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=LineString table="public"."osm_roads" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=localhost port=15432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=LineString table="import"."osm_roads" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>

@@ -111,7 +111,7 @@
         <ymax>47.80253219604490056</ymax>
       </extent>
       <id>osm_amenities20160708081323691</id>
-      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=Point table="public"."osm_amenities" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=Point table="import"."osm_amenities" (geometry) sql=</datasource>
       <shortname>amenities_simple</shortname>
       <title>amenities_simple</title>
       <keywordList>
@@ -431,7 +431,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>47.80253219604490056</ymax>
       </extent>
       <id>osm_amenities20160708081558683</id>
-      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=Point table="public"."osm_amenities" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=Point table="import"."osm_amenities" (geometry) sql=</datasource>
       <shortname>amenities_class</shortname>
       <title>amenities_class</title>
       <keywordList>
@@ -808,7 +808,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>47.80215835571289773</ymax>
       </extent>
       <id>osm_buildings20160708090725136</id>
-      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=MultiPolygon table="public"."osm_buildings" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=MultiPolygon table="import"."osm_buildings" (geometry) sql=</datasource>
       <shortname>building_simple</shortname>
       <title>building_simple</title>
       <keywordList>
@@ -1121,7 +1121,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>47.80215835571289773</ymax>
       </extent>
       <id>osm_buildings20160708091052980</id>
-      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=MultiPolygon table="public"."osm_buildings" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=MultiPolygon table="import"."osm_buildings" (geometry) sql=</datasource>
       <shortname>building_hatched</shortname>
       <title>building_hatched</title>
       <keywordList>
@@ -1485,7 +1485,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>47.81562042236330257</ymax>
       </extent>
       <id>osm_roads20160707115518827</id>
-      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=LineString table="public"."osm_roads" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=LineString table="import"."osm_roads" (geometry) sql=</datasource>
       <shortname>roads_simple</shortname>
       <title>roads_simple</title>
       <keywordList>
@@ -1882,7 +1882,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>47.82088470458980112</ymax>
       </extent>
       <id>osm_roads20160708073426641</id>
-      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=LineString table="public"."osm_roads" (geometry) sql=</datasource>
+      <datasource>dbname='gis' host=db port=5432 user='docker' password='docker' sslmode=disable key='id' srid=4326 type=LineString table="import"."osm_roads" (geometry) sql=</datasource>
       <shortname>roads_dashed</shortname>
       <title>roads_dashed</title>
       <keywordList>
