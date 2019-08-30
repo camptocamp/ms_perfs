@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-COMPOSE="/usr/local/bin/docker-compose -f docker-compose.yml -f docker-compose-perfs.yml"
+COMPOSE="docker-compose -f docker-compose.yml -f docker-compose-perfs.yml"
 
 export USERS
 export BASE_URLS
