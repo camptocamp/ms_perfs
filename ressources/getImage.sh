@@ -5,10 +5,10 @@ declare -A SCRIPT={}
 declare -A PORT={}
 declare -A CRS={}
 
-PORT['MapServer']=8081
-PORT['GeoServer']=8082
-PORT['QGIS2']=8084
-PORT['QGIS3']=8083
+PORT['MapServer']=9081
+PORT['GeoServer']=9082
+PORT['QGIS2']=9084
+PORT['QGIS3']=9083
 
 SCRIPT['MapServer']=""
 SCRIPT['GeoServer']=ows

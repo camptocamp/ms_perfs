@@ -30,9 +30,9 @@ docker-compose up
 It will start:
 
 * PostgresQL: `psql -h localhost -p 15432 -U docker gis` with `docker` as password
-* MapServer: http://localhost:8081/?SERVICE=WMS&REQUEST=GetCapabilities
-* GeoServer: http://localhost:8082/ows?SERVICE=WMS&REQUEST=GetCapabilities
-* QGIS server: http://localhost:8083/?SERVICE=WMS&REQUEST=GetCapabilities
+* MapServer: http://localhost:9081/?SERVICE=WMS&REQUEST=GetCapabilities
+* GeoServer: http://localhost:9082/ows?SERVICE=WMS&REQUEST=GetCapabilities
+* QGIS server: http://localhost:9083/?SERVICE=WMS&REQUEST=GetCapabilities
 
 You can open the `test.qgs` project with QGIS to browse them.
 
@@ -63,7 +63,7 @@ Just edit it or one of the included files.
 
 ### GeoServer
 
-Use the admin interface with user=admin password=geoserver: http://localhost:8082/
+Use the admin interface with user=admin password=geoserver: http://localhost:9082/
 
 
 ### QGIS

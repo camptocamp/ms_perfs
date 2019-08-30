@@ -15,7 +15,7 @@ db:
 mapserver:
   image: camptocamp/mapserver:latest
   ports:
-    - 8081:80
+    - 9081:80
   volumes:
     - ./mapserver:/etc/mapserver
   links:
@@ -24,7 +24,7 @@ mapserver:
 geoserver:
   image: camptocamp/geoserver:2.15
   ports:
-    - 8082:8080
+    - 9082:8080
   volumes:
     - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
   links:
@@ -33,7 +33,7 @@ geoserver:
 geoserver-jai:
   image: camptocamp/geoserver:2.15
   ports:
-    - 8085:8080
+    - 9085:8080
   environment:
     CATALINA_OPTS: ""
   volumes:
@@ -49,7 +49,7 @@ qgis3:
     QGIS_SERVER_PARALLEL_RENDERING: "true"
     QGIS_SERVER_MAX_THREADS: 8
   ports:
-    - 8083:80
+    - 9083:80
   volumes:
     - ./qgis:/project
     - ./qgis/QGIS:/root/QGIS
@@ -64,7 +64,7 @@ qgis3-trust:
     QGIS_SERVER_PARALLEL_RENDERING: "true"
     QGIS_SERVER_MAX_THREADS: 8
   ports:
-    - 8086:80
+    - 9086:80
   volumes:
     - ./qgis-trust:/project
     - ./qgis/QGIS:/root/QGIS

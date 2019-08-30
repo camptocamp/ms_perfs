@@ -259,7 +259,7 @@
         <ymax>48</ymax>
       </extent>
       <id>amenities_class20160707162310136</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:9081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -304,7 +304,7 @@
         <ymax>47.82090000000000174</ymax>
       </extent>
       <id>amenities_class20160708090532590</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:8083/</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:9083/</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -349,7 +349,7 @@
         <ymax>68.54894427851110095</ymax>
       </extent>
       <id>amenities_class20160708143008888</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:8082/OSM/ows?</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_class&amp;styles=&amp;url=http://localhost:9082/OSM/ows?</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -394,7 +394,7 @@
         <ymax>48</ymax>
       </extent>
       <id>amenities_simple20160707162112048</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:9081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -439,7 +439,7 @@
         <ymax>47.82090000000000174</ymax>
       </extent>
       <id>amenities_simple20160708090506631</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:8083/</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:9083/</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -484,7 +484,7 @@
         <ymax>68.54894427851110095</ymax>
       </extent>
       <id>amenities_simple20160708143012299</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:8082/OSM/ows?</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=amenities_simple&amp;styles=&amp;url=http://localhost:9082/OSM/ows?</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -529,7 +529,7 @@
         <ymax>48</ymax>
       </extent>
       <id>building_hatched20160707162257760</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_hatched&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_hatched&amp;styles=&amp;url=http://localhost:9081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -574,7 +574,7 @@
         <ymax>68.87344450000000506</ymax>
       </extent>
       <id>building_hatched20160708143014154</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_hatched&amp;styles=&amp;url=http://localhost:8082/OSM/ows?</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_hatched&amp;styles=&amp;url=http://localhost:9082/OSM/ows?</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -619,7 +619,7 @@
         <ymax>48</ymax>
       </extent>
       <id>building_simple20160707162116553</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:9081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -664,7 +664,7 @@
         <ymax>47.82090000000000174</ymax>
       </extent>
       <id>building_simple20160708090950593</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:8083/</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:9083/</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -709,7 +709,7 @@
         <ymax>68.87344450000000506</ymax>
       </extent>
       <id>building_simple20160708143015923</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:8082/OSM/ows?</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=building_simple&amp;styles=&amp;url=http://localhost:9082/OSM/ows?</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -897,7 +897,7 @@
         <ymax>48</ymax>
       </extent>
       <id>roads_dashed20160707162301768</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:9081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -942,7 +942,7 @@
         <ymax>47.82090000000000174</ymax>
       </extent>
       <id>roads_dashed20160708081000170</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:8083/</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:9083/</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -987,7 +987,7 @@
         <ymax>68.5108110000000039</ymax>
       </extent>
       <id>roads_dashed20160708143017899</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:8082/OSM/ows?</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_dashed&amp;styles=&amp;url=http://localhost:9082/OSM/ows?</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1032,7 +1032,7 @@
         <ymax>48</ymax>
       </extent>
       <id>roads_simple20160707162114144</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:8081//</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:9081//</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1077,7 +1077,7 @@
         <ymax>47.82090000000000174</ymax>
       </extent>
       <id>roads_simple20160708081002283</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:8083/</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:9083/</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1122,7 +1122,7 @@
         <ymax>64.70595264985280437</ymax>
       </extent>
       <id>roads_simple20160708143019618</id>
-      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:8082/OSM/ows?</datasource>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=roads_simple&amp;styles=&amp;url=http://localhost:9082/OSM/ows?</datasource>
       <keywordList>
         <value></value>
       </keywordList>
