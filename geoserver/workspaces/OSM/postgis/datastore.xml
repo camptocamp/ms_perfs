@@ -7,7 +7,7 @@
     <id>WorkspaceInfoImpl-1e6446e2:155c467622c:-7fe4</id>
   </workspace>
   <connectionParameters>
-    <entry key="schema">import</entry>
+    <entry key="schema">public</entry>
     <entry key="Evictor run periodicity">300</entry>
     <entry key="Max open prepared statements">50</entry>
     <entry key="encode functions">false</entry>
