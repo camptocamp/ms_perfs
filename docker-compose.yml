@@ -26,7 +26,7 @@ geoserver:
   ports:
     - 9082:8080
   volumes:
-    - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
+    - ./geoserver:/mnt/geoserver_datadir
   links:
     - db
 
@@ -35,9 +35,9 @@ geoserver-jai:
   ports:
     - 9085:8080
   environment:
-    CATALINA_OPTS: ""
+    CATALINA_OPTS: "-Xms1024M -DGEOSERVER_DATA_DIR=/mnt/geoserver_datadir  -DGEOWEBCACHE_CACHE_DIR=/mnt/geoserver_tiles -DENABLE_JSONP=true -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2  -XX:SoftRefLRUPolicyMSPerMB=36000  -XX:+UnlockExperimentalVMOptions  -XX:+UseCGroupMemoryLimitForHeap"
   volumes:
-    - ./geoserver:/usr/local/tomcat/webapps/ROOT/data
+    - ./geoserver:/mnt/geoserver_datadir
   links:
     - db
 
