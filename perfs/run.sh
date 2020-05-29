@@ -24,13 +24,7 @@ do
     sleep 1
 done
 
-until wget "http://qgis3-trust/?SERVICE=WMS&REQUEST=GetCapabilities" -O /dev/null
-do
-    echo "Waiting for QGIS3-Trust"
-    sleep 1
-done
-
-export base_urls="${BASE_URLS:-http://geoserver:8080/OSM/ows|GeoServer,http://geoserver-jai:8080/OSM/ows|GeoServer-jai,http://mapserver/|MapServer,http://qgis3/|QGIS3,http://qgis3-trust/|QGIS3-Trust}"
+export base_urls="${BASE_URLS:-http://geoserver:8080/OSM/ows|GeoServer,http://geoserver-jai:8080/OSM/ows|GeoServer-jai,http://mapserver/|MapServer,http://qgis3/|QGIS3}"
 echo "base_urls=$base_urls"
 
 export start_level=${START_LEVEL:-0}
