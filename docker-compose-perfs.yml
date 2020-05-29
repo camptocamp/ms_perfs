@@ -5,7 +5,6 @@ gatling:
     - geoserver
     - geoserver-jai
     - qgis3
-    - qgis3-trust
   environment:
     - USERS
     - BASE_URLS
